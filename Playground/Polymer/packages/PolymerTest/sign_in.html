@@ -1,0 +1,21 @@
+<link rel="import" href="../../packages/polymer/polymer.html">
+<link rel="import" href="../../packages/paper_elements/paper_input.html">
+<link rel="import" href="../../packages/paper_elements/paper_button.html">
+
+<polymer-element name="sign-in-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      paper-button.fancyButton::shadow #ripple {
+        color: blue;
+      }
+    </style>
+
+    <paper-input label="Email" inputValue="{{email}}" floatingLabel="true"></paper-input>
+    <paper-input label="Password" inputValue="{{password}}" floatingLabel="true" type="password"></paper-input>
+    <paper-button raised class="fancyButton" on-click="{{OnSignInClicked}}">Sign in</paper-button>
+  </template>
+  <script type="application/dart" src="sign_in.dart"></script>
+</polymer-element>
