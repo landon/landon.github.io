@@ -1,0 +1,110 @@
+<html>
+  <head>    
+    <title>fixable graphs</title>
+    <style>
+	html, body {
+ height: 100%;
+ padding:0;
+ margin: 0;
+}
+
+table {
+  height:100%;
+  width:100%;
+  background: aliceblue;}
+
+
+.containerDiv {
+   float:left;
+   width:200px;
+   height:200px;
+   border:1px solid;
+}
+
+.imageDiv {
+   position:relative;
+   z-index: -1000;
+   width:175px;
+   height:175px;
+   margin:10px 20px;
+   -webkit-transition: all 1s ease 0s;
+   -moz-transition: all 1s ease 0s;
+   -ms-transition: all 1s ease 0s;
+   -o-transition: all 1s ease 0s;
+   transition: all 1s ease 0s;
+}
+
+.containerDiv:hover .imageDiv{
+   position:relative;
+   z-index: 1000;
+   width:600px;
+   height:600px;    
+   background-color: rgb(125,125,125);
+   border-radius: 50px;
+   -webkit-transition: all 1s ease 0.5s;
+   -moz-transition: all 1s ease 0.5s;
+   -ms-transition: all 1s ease 0.5s;
+   -o-transition: all 1s ease 0.5s;
+   transition: all 1s ease 0.5s;
+}
+
+    </style>
+  </head>
+  <body>
+	<div id="output"></div>
+	<script>
+		var imageDivs = [];
+		var columns = 10;
+		var graphs =   ['111111.svg','111000011011110.svg','111001010001111.svg','1110000001100010100101001101.svg','1110000001100010100110001011.svg','111000000001100000001100000011010100101001100.svg','111000000001100000101000010100000010010011110.svg','111000000001100000101000010100000010010101101.svg','111000000000010010000010001000011000000000100000110001010011011000.svg','111000000000011000000010100000010100000000100001000001011010001101.svg','111000000001000100000000010000110000001000100001000001011010010011.svg','1110000000000001100000000000110000000000110000000001100000000110001010000101001101001000000.svg']
+
+		function getFile(url, onReceived) {
+			var request = new XMLHttpRequest();
+			request.open('GET', url, true);
+
+			request.onload = function() {
+			  if (request.status >= 200 && request.status < 400) {
+				onReceived(request.responseText);
+			  } else {
+			  }
+			};
+
+			request.onerror = function() {
+			};
+
+			request.send();
+		}
+	
+		window.onload = function () {	
+			var outputDiv = document.getElementById("output");
+			for (var k = 0; k < graphs.length; k++) {
+			   var containerDiv = document.createElement('div');
+			   var imageDiv = document.createElement('div');
+			   
+			   containerDiv.className="containerDiv";
+			   imageDiv.className="imageDiv";
+
+			   containerDiv.appendChild(imageDiv);
+			   outputDiv.appendChild(containerDiv);
+		       imageDivs.push(imageDiv);			   
+			}
+
+			redraw();
+		}
+		
+		function redraw() {
+			var tt = 0;
+			var repeater = function () {
+				getFile(graphs[tt], (function(x) {
+										return function(svg) {
+												imageDivs[x].innerHTML = svg;
+											};
+									})(tt));
+				tt++;
+				if (tt < graphs.length) 
+					setTimeout(repeater, 1);
+			};
+			repeater();
+		}
+	</script>
+  </body>
+</html>
