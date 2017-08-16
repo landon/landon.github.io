@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>webgraphs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="test.css">
+    <script src="bridge.js"></script>
+    <script src="bridge.console.js"></script>
+    <script src="bridge.meta.js"></script>
+    <script src="Test.js"></script>
+    <script src="Test.meta.js"></script>
+	<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+	<script type="text/javascript">
+
+</script>
+</head>
+<body style="overflow: hidden">
+<div class="container Override">
+	<div class="page-header">
+		<div class="dropdown">
+			    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					Ask Sage
+					<span class="caret"></span>
+			    </button>
+			    <ul class="dropdown-menu"  aria-labelledby="dropdownMenu1">
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Coloring</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageChromaticNumber">Chromatic Number</a></li>
+							<li><a href="#" id="SageColoring">Optimal Coloring</a></li>
+							<li><a href="#" id="SageFractionalChromaticIndex">Fractional Chromatic Index</a></li>
+							<!--<li><a href="#" id="SageLovaszTheta">Lovász Theta Function</a></li>-->
+						</ul>
+					</li>
+   				    <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Vertex Sets</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageCliqueNumber">Clique Number</a></li>
+							<li><a href="#" id="SageCliqueMaximum">Maximum Clique</a></li>
+							<li><a href="#" id="SageIndependentSet">Maximum Independent Set</a></li>
+							<li><a href="#" id="SageVertexCover">Minimum Vertex Cover</a></li>
+						</ul>
+					</li>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Polynomials</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageChromaticPolynomial">Chromatic Polynomial</a></li>
+							<li><a href="#" id="SageCliquePolynomial">Clique Polynomial</a></li>
+							<li><a href="#" id="SageMatchingPolynomial">Matching Polynomial</a></li>
+							<li><a href="#" id="SageTuttePolynomial">Tutte Polynomial</a></li>
+							<li><a href="#" id="SageKirchhoffSymanzikPolynomial">Kirchhoff-Symanzik Polynomial</a></li>
+							
+						</ul>
+					</li>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Properties</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageIsPerfect">Is Perfect?</a></li>
+							<li><a href="#" id="SageHasPerfectMatching">Has Perfect Matching?</a></li>
+							<li><a href="#" id="SageIsApex">Is Apex?</a></li>
+							<li><a href="#" id="SageIsArcTransitive">Is Arc Transitive?</a></li>
+							<li><a href="#" id="SageIsAsteroidalTripleFree">Is Asteroidal Triple Free?</a></li>
+							<li><a href="#" id="SageIsBiconnected">Is Biconnected?</a></li>
+							<li><a href="#" id="SageIsBipartite">Is Bipartite?</a></li>
+							<li><a href="#" id="SageIsBlockGraph">Is Block Graph?</a></li>
+							<li><a href="#" id="SageIsCartesianProduct">Is Cartesian Product?</a></li>
+							<li><a href="#" id="SageIsDistanceRegular">Is Distance Regular?</a></li>
+							<li><a href="#" id="SageIsEdgeTransitive">Is Edge Transitive?</a></li>
+							<li><a href="#" id="SageIsEvenHoleFree">Is Even Hole Free?</a></li>
+							<li><a href="#" id="SageIsForest">Is Forest?</a></li>
+							<li><a href="#" id="SageIsHalfTransitive">Is Half Transitive?</a></li>
+							<li><a href="#" id="SageIsLineGraph">Is Line Graph?</a></li>
+							<li><a href="#" id="SageIsLongAntiholeFree">Is Long Antihole Free?</a></li>
+							<li><a href="#" id="SageIsLongHoleFree">Is Long Hole Free?</a></li>
+							<li><a href="#" id="SageIsOddHoleFree">Is Odd Hole Free?</a></li>
+							<li><a href="#" id="SageIsOverfull">Is Overfull?</a></li>
+							<li><a href="#" id="SageIsPartialCube">Is Partial Cube?</a></li>
+							<!--<li><a href="#" id="SageIsPrime">Is Prime?</a></li>-->
+							<li><a href="#" id="SageIsSemiSymmetric">Is Semi Symmetric?</a></li>
+							<li><a href="#" id="SageIsSplit">Is Split?</a></li>
+							<li><a href="#" id="SageIsStronglyRegular">Is Strongly Regular?</a></li>
+							<li><a href="#" id="SageIsTree">Is Tree?</a></li>
+							<li><a href="#" id="SageIsTriangleFree">Is Triangle Free?</a></li>
+							<li><a href="#" id="SageIsWeaklyChordal">Is Weakly Chordal?</a></li>
+						</ul>
+					</li>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Topological</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SagePathwidth">Path Width</a></li>
+							<li><a href="#" id="SageTreewidth">Tree Width</a></li>
+							<li><a href="#" id="SageCliqueComplex">Clique Complex</a></li>
+							<li><a href="#" id="SageBridges">Bridges</a></li>
+							<li><a href="#" id="SageGomoryHuTree">Gomory-Hu Tree</a></li>
+							<li><a href="#" id="SageRandomSpanningTree">Random Spanning Tree</a></li>
+							<li><a href="#" id="SageApexVertices">Apex Vertices</a></li>
+							<li><a href="#" id="SageOddGirth">Odd Girth</a></li>
+							<li><a href="#" id="SageMaximumAverageDegree">Maximum Average Degree</a></li>
+						</ul>
+					</li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#" id="SageManual">Custom Python</a></li>
+					<li><a href="#" id="SageGraph6">To Graph6</a></li>
+				</ul>
+		</div>
+	</div>
+	
+	<ul class="nav nav-tabs" role="tablist" id="TabControl">
+	</ul>
+	
+	<div class="tab-content" id="TabControlContent">
+	</div>
+</div>
+	
+<div id="SageModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <div class="modal-body" id = "SageContainer">
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
