@@ -25,6 +25,24 @@
 					<span class="caret"></span>
 			    </button>
 			    <ul class="dropdown-menu"  aria-labelledby="dropdownMenu1">
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Basic</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageOrder">Order</a></li>
+							<li><a href="#" id="SageSize">Size</a></li>
+							<li><a href="#" id="SageDensity">Density</a></li>
+							<li><a href="#" id="SageEdgeConnectivity">Edge Connectivity</a></li>
+							<li><a href="#" id="SageVertexConnectivity">Vertex Connectivity</a></li>
+							<li><a href="#" id="SageAverageDegree">Average Degree</a></li>
+							<li><a href="#" id="SageMaximumAverageDegree">Maximum Average Degree</a></li>
+							<li><a href="#" id="SageDegreeSequence">Degree Sequence</a></li>
+							<li><a href="#" id="SageEccentricity">Eccentricity</a></li>
+							<li><a href="#" id="SageRadius">Radius</a></li>
+							<li><a href="#" id="SageDiameter">Diameter</a></li>
+							<li><a href="#" id="SageGirth">Girth</a></li>
+							<li><a href="#" id="SageOddGirth">Odd Girth</a></li>
+							<li><a href="#" id="SageCanonicalLabel">Canonical Label</a></li>
+						</ul>
+					</li>
 					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Coloring</a>
 						<ul class="dropdown-menu">
 							<li><a href="#" id="SageChromaticNumber">Chromatic Number</a></li>
@@ -48,11 +66,17 @@
 							<li><a href="#" id="SageMatchingPolynomial">Matching Polynomial</a></li>
 							<li><a href="#" id="SageTuttePolynomial">Tutte Polynomial</a></li>
 							<li><a href="#" id="SageKirchhoffSymanzikPolynomial">Kirchhoff-Symanzik Polynomial</a></li>
+							<li><a href="#" id="SageCharacteristicPolynomial">Characteristic Polynomial</a></li>
 							
 						</ul>
 					</li>
 					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Properties</a>
 						<ul class="dropdown-menu">
+							<li><a href="#" id="SageIsPlanar">Is Planar?</a></li>
+							<li><a href="#" id="SageIsVertexTransitive">Is Vertex Transitive?</a></li>
+							<li><a href="#" id="SageIsCayley">Is Cayley Graph?</a></li>
+							<li><a href="#" id="SageIsHamiltonian">Is Hamiltonian?</a></li>
+							<li><a href="#" id="SageIsEulerian">Is Eulerian?</a></li>
 							<li><a href="#" id="SageIsPerfect">Is Perfect?</a></li>
 							<li><a href="#" id="SageHasPerfectMatching">Has Perfect Matching?</a></li>
 							<li><a href="#" id="SageIsApex">Is Apex?</a></li>
@@ -80,10 +104,28 @@
 							<li><a href="#" id="SageIsTree">Is Tree?</a></li>
 							<li><a href="#" id="SageIsTriangleFree">Is Triangle Free?</a></li>
 							<li><a href="#" id="SageIsWeaklyChordal">Is Weakly Chordal?</a></li>
+							
+							
 						</ul>
 					</li>
-					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Topological</a>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Algebra</a>
 						<ul class="dropdown-menu">
+							<li><a href="#" id="SageAdjacencyMatrix">Adjacency Matrix</a></li>
+							<li><a href="#" id="SageIncidenceMatrix">Incidence Matrix</a></li>
+							<li><a href="#" id="SageDistanceMatrix">Distance Matrix</a></li>
+							<li><a href="#" id="SageKirchhoffMatrix">Kirchoff Matrix</a></li>
+							<li><a href="#" id="SageSeidelAdjacencyMatrix">Seidel Adjacency Matrix</a></li>
+							<li><a href="#" id="SageCycleBasis">Cycle Basis</a></li>
+							<li><a href="#" id="SageSpectrum">Spectrum</a></li>
+							<li><a href="#" id="SageEigenvectors">Eigenvectors</a></li>
+							<li><a href="#" id="SageEigenspaces">Eigenspaces</a></li>
+							<li><a href="#" id="SageAutomorphismGroup">Automorphism Group</a></li>
+				
+						</ul>
+					</li>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Topology</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageGenus">Genus</a></li>
 							<li><a href="#" id="SagePathwidth">Path Width</a></li>
 							<li><a href="#" id="SageTreewidth">Tree Width</a></li>
 							<li><a href="#" id="SageCliqueComplex">Clique Complex</a></li>
@@ -91,13 +133,12 @@
 							<li><a href="#" id="SageGomoryHuTree">Gomory-Hu Tree</a></li>
 							<li><a href="#" id="SageRandomSpanningTree">Random Spanning Tree</a></li>
 							<li><a href="#" id="SageApexVertices">Apex Vertices</a></li>
-							<li><a href="#" id="SageOddGirth">Odd Girth</a></li>
-							<li><a href="#" id="SageMaximumAverageDegree">Maximum Average Degree</a></li>
 						</ul>
 					</li>
 					<li role="separator" class="divider"></li>
 					<li><a href="#" id="SageManual">Custom Python</a></li>
 					<li><a href="#" id="SageGraph6">To Graph6</a></li>
+					<!--<li><a href="#" id="SageNetworkxGraph">To NetworkX</a></li>-->
 				</ul>
 		</div>
 	</div>
