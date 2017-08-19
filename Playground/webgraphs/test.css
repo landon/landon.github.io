@@ -21,6 +21,10 @@ body {
 	margin:0;
 }
 
+.webgraphsmenuitem {
+background: aliceblue;
+}
+
 .container {
     display:table;
     width: 100%;
