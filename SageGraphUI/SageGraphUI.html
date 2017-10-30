@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sage Graphs</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	 <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="SageGraphUI.css">
+    <script src="bridge.js"></script>
+    <script src="bridge.console.js"></script>
+    <script src="bridge.meta.js"></script>
+    <script src="SageGraphUI.js"></script>
+    <script src="SageGraphUI.meta.js"></script>
+	<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+	<script type="text/javascript">
+
+</script>
+</head>
+<body style="overflow: hidden">
+
+<div class="container-fluid">
+	<div class="page-header">
+	  <ul class="nav navbar-nav">
+		<li class="dropdown">
+				<button class="btn btn-default dropdown-toggle webgraphsmenuitem" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					Ask Sage
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Basic</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageOrder">Order</a></li>
+							<li><a href="#" id="SageSize">Size</a></li>
+							<li><a href="#" id="SageDensity">Density</a></li>
+							<li><a href="#" id="SageEdgeConnectivity">Edge Connectivity</a></li>
+							<li><a href="#" id="SageVertexConnectivity">Vertex Connectivity</a></li>
+							<li><a href="#" id="SageAverageDegree">Average Degree</a></li>
+							<li><a href="#" id="SageMaximumAverageDegree">Maximum Average Degree</a></li>
+							<li><a href="#" id="SageDegreeSequence">Degree Sequence</a></li>
+							<li><a href="#" id="SageEccentricity">Eccentricity</a></li>
+							<li><a href="#" id="SageRadius">Radius</a></li>
+							<li><a href="#" id="SageDiameter">Diameter</a></li>
+							<li><a href="#" id="SageGirth">Girth</a></li>
+							<li><a href="#" id="SageOddGirth">Odd Girth</a></li>
+							<li><a href="#" id="SageCanonicalLabel">Canonical Label</a></li>
+						</ul>
+					</li>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Coloring</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageChromaticNumber">Chromatic Number</a></li>
+							<li><a href="#" id="SageColoring">Optimal Coloring</a></li>
+							<li><a href="#" id="SageFractionalChromaticIndex">Fractional Chromatic Index</a></li>
+							<!--<li><a href="#" id="SageLovaszTheta">Lovász Theta Function</a></li>-->
+						</ul>
+					</li>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Vertex Sets</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageCliqueNumber">Clique Number</a></li>
+							<li><a href="#" id="SageCliqueMaximum">Maximum Clique</a></li>
+							<li><a href="#" id="SageIndependentSet">Maximum Independent Set</a></li>
+							<li><a href="#" id="SageVertexCover">Minimum Vertex Cover</a></li>
+						</ul>
+					</li>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Polynomials</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageChromaticPolynomial">Chromatic Polynomial</a></li>
+							<li><a href="#" id="SageCliquePolynomial">Clique Polynomial</a></li>
+							<li><a href="#" id="SageMatchingPolynomial">Matching Polynomial</a></li>
+							<li><a href="#" id="SageTuttePolynomial">Tutte Polynomial</a></li>
+							<li><a href="#" id="SageKirchhoffSymanzikPolynomial">Kirchhoff-Symanzik Polynomial</a></li>
+							<li><a href="#" id="SageCharacteristicPolynomial">Characteristic Polynomial</a></li>
+							
+						</ul>
+					</li>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Properties</a>
+						<ul class="dropdown-menu scrollable-menu">
+							<li><a href="#" id="SageIsPlanar">Is Planar?</a></li>
+							<li><a href="#" id="SageIsVertexTransitive">Is Vertex Transitive?</a></li>
+							<li><a href="#" id="SageIsCayley">Is Cayley Graph?</a></li>
+							<li><a href="#" id="SageIsHamiltonian">Is Hamiltonian?</a></li>
+							<li><a href="#" id="SageIsEulerian">Is Eulerian?</a></li>
+							<li><a href="#" id="SageIsPerfect">Is Perfect?</a></li>
+							<li><a href="#" id="SageHasPerfectMatching">Has Perfect Matching?</a></li>
+							<li><a href="#" id="SageIsApex">Is Apex?</a></li>
+							<li><a href="#" id="SageIsArcTransitive">Is Arc Transitive?</a></li>
+							<li><a href="#" id="SageIsAsteroidalTripleFree">Is Asteroidal Triple Free?</a></li>
+							<li><a href="#" id="SageIsBiconnected">Is Biconnected?</a></li>
+							<li><a href="#" id="SageIsBipartite">Is Bipartite?</a></li>
+							<li><a href="#" id="SageIsBlockGraph">Is Block Graph?</a></li>
+							<li><a href="#" id="SageIsCartesianProduct">Is Cartesian Product?</a></li>
+							<li><a href="#" id="SageIsDistanceRegular">Is Distance Regular?</a></li>
+							<li><a href="#" id="SageIsEdgeTransitive">Is Edge Transitive?</a></li>
+							<li><a href="#" id="SageIsEvenHoleFree">Is Even Hole Free?</a></li>
+							<li><a href="#" id="SageIsForest">Is Forest?</a></li>
+							<li><a href="#" id="SageIsHalfTransitive">Is Half Transitive?</a></li>
+							<li><a href="#" id="SageIsLineGraph">Is Line Graph?</a></li>
+							<li><a href="#" id="SageIsLongAntiholeFree">Is Long Antihole Free?</a></li>
+							<li><a href="#" id="SageIsLongHoleFree">Is Long Hole Free?</a></li>
+							<li><a href="#" id="SageIsOddHoleFree">Is Odd Hole Free?</a></li>
+							<li><a href="#" id="SageIsOverfull">Is Overfull?</a></li>
+							<li><a href="#" id="SageIsPartialCube">Is Partial Cube?</a></li>
+							<!--<li><a href="#" id="SageIsPrime">Is Prime?</a></li>-->
+							<li><a href="#" id="SageIsSemiSymmetric">Is Semi Symmetric?</a></li>
+							<li><a href="#" id="SageIsSplit">Is Split?</a></li>
+							<li><a href="#" id="SageIsStronglyRegular">Is Strongly Regular?</a></li>
+							<li><a href="#" id="SageIsTree">Is Tree?</a></li>
+							<li><a href="#" id="SageIsTriangleFree">Is Triangle Free?</a></li>
+							<li><a href="#" id="SageIsWeaklyChordal">Is Weakly Chordal?</a></li>
+							
+							
+						</ul>
+					</li>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Algebra</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageAdjacencyMatrix">Adjacency Matrix</a></li>
+							<li><a href="#" id="SageIncidenceMatrix">Incidence Matrix</a></li>
+							<li><a href="#" id="SageDistanceMatrix">Distance Matrix</a></li>
+							<li><a href="#" id="SageKirchhoffMatrix">Kirchoff Matrix</a></li>
+							<li><a href="#" id="SageSeidelAdjacencyMatrix">Seidel Adjacency Matrix</a></li>
+							<li><a href="#" id="SageCycleBasis">Cycle Basis</a></li>
+							<li><a href="#" id="SageSpectrum">Spectrum</a></li>
+							<li><a href="#" id="SageEigenvectors">Eigenvectors</a></li>
+							<li><a href="#" id="SageEigenspaces">Eigenspaces</a></li>
+							<li><a href="#" id="SageAutomorphismGroup">Automorphism Group</a></li>
+				
+						</ul>
+					</li>
+					<li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Topology</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" id="SageGenus">Genus</a></li>
+							<li><a href="#" id="SagePathwidth">Path Width</a></li>
+							<li><a href="#" id="SageTreewidth">Tree Width</a></li>
+							<li><a href="#" id="SageCliqueComplex">Clique Complex</a></li>
+							<li><a href="#" id="SageBridges">Bridges</a></li>
+							<li><a href="#" id="SageGomoryHuTree">Gomory-Hu Tree</a></li>
+							<li><a href="#" id="SageRandomSpanningTree">Random Spanning Tree</a></li>
+							<li><a href="#" id="SageApexVertices">Apex Vertices</a></li>
+						</ul>
+					</li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#" id="SageManual">Custom Python</a></li>
+					<li><a href="#" id="SageGraph6">To Graph6</a></li>
+					<!--<li><a href="#" id="SageNetworkxGraph">To NetworkX</a></li>-->
+				</ul>
+		</li>
+		
+		<li class="dropdown">
+				<button class="btn btn-default dropdown-toggle webgraphsmenuitem" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					Layout
+					<span class="caret"></span>
+				</button>
+				
+				<ul class="dropdown-menu">
+					<li><a href="#" id="SageLayoutSprings">Springs</a></li>
+					<!--<li><a href="#" id="SageLayoutRanked">Ranked</a></li>-->
+					<!--<li><a href="#" id="SageLayoutRandom">Extend Randomly</a></li>-->
+					<li><a href="#" id="SageLayoutCircular">Circular</a></li>
+					<!--<li><a href="#" id="SageLayoutTree">Tree</a></li>-->
+					<li><a href="#" id="SageLayoutGraphViz">GraphViz</a></li>
+					<li><a href="#" id="SageLayoutPlanar">Planar</a></li>
+				</ul>
+	   </li>
+	   
+	   <li class="dropdown">
+				<button class="btn btn-default dropdown-toggle webgraphsmenuitem" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					Named Graphs
+					<span class="caret"></span>
+				</button>
+				
+				
+		
+		 
+				<ul class="dropdown-menu scrollable-menu">
+					<li><a href="#" id="SageTetrahedralGraph" class="NamedGraph">TetrahedralGraph</a></li>
+					<li><a href="#" id="SageHexahedralGraph" class="NamedGraph">HexahedralGraph</a></li>
+					<li><a href="#" id="SageDodecahedralGraph" class="NamedGraph">DodecahedralGraph</a></li>
+					<li><a href="#" id="SageOctahedralGraph" class="NamedGraph">OctahedralGraph</a></li>
+					<li><a href="#" id="SageIcosahedralGraph" class="NamedGraph">IcosahedralGraph</a></li>
+					<li><a href="#" id="SageBalaban10Cage" class="NamedGraph">Balaban10Cage</a></li>
+					<li><a href="#" id="SageBalaban11Cage" class="NamedGraph">Balaban11Cage</a></li>
+					<li><a href="#" id="SageBidiakisCube" class="NamedGraph">BidiakisCube</a></li>
+					<li><a href="#" id="SageBiggsSmithGraph" class="NamedGraph">BiggsSmithGraph</a></li>
+					<li><a href="#" id="SageBlanusaFirstSnarkGraph" class="NamedGraph">BlanusaFirstSnarkGraph</a></li>
+					<li><a href="#" id="SageBlanusaSecondSnarkGraph" class="NamedGraph">BlanusaSecondSnarkGraph</a></li>
+					<li><a href="#" id="SageBrinkmannGraph" class="NamedGraph">BrinkmannGraph</a></li>
+					<li><a href="#" id="SageBrouwerHaemersGraph" class="NamedGraph">BrouwerHaemersGraph</a></li>
+					<li><a href="#" id="SageBuckyBall" class="NamedGraph">BuckyBall</a></li>
+					<li><a href="#" id="SageCameronGraph" class="NamedGraph">CameronGraph</a></li>
+					<li><a href="#" id="SageCell120" class="NamedGraph">Cell120</a></li>
+					<li><a href="#" id="SageCell600" class="NamedGraph">Cell600</a></li>
+					<li><a href="#" id="SageChvatalGraph" class="NamedGraph">ChvatalGraph</a></li>
+					<li><a href="#" id="SageClebschGraph" class="NamedGraph">ClebschGraph</a></li>
+					<li><a href="#" id="SageCoxeterGraph" class="NamedGraph">CoxeterGraph</a></li>
+					<li><a href="#" id="SageDejterGraph" class="NamedGraph">DejterGraph</a></li>
+					<li><a href="#" id="SageDesarguesGraph" class="NamedGraph">DesarguesGraph</a></li>
+					<li><a href="#" id="SageDoubleStarSnark" class="NamedGraph">DoubleStarSnark</a></li>
+					<li><a href="#" id="SageDurerGraph" class="NamedGraph">DurerGraph</a></li>
+					<li><a href="#" id="SageDyckGraph" class="NamedGraph">DyckGraph</a></li>
+					<li><a href="#" id="SageEllinghamHorton54Graph" class="NamedGraph">EllinghamHorton54Graph</a></li>
+					<li><a href="#" id="SageEllinghamHorton78Graph" class="NamedGraph">EllinghamHorton78Graph</a></li>
+					<li><a href="#" id="SageErreraGraph" class="NamedGraph">ErreraGraph</a></li>
+					<li><a href="#" id="SageF26AGraph" class="NamedGraph">F26AGraph</a></li>
+					<li><a href="#" id="SageFlowerSnark" class="NamedGraph">FlowerSnark</a></li>
+					<li><a href="#" id="SageFolkmanGraph" class="NamedGraph">FolkmanGraph</a></li>
+					<li><a href="#" id="SageFosterGraph" class="NamedGraph">FosterGraph</a></li>
+					<li><a href="#" id="SageFranklinGraph" class="NamedGraph">FranklinGraph</a></li>
+					<li><a href="#" id="SageFruchtGraph" class="NamedGraph">FruchtGraph</a></li>
+					<li><a href="#" id="SageGoldnerHararyGraph" class="NamedGraph">GoldnerHararyGraph</a></li>
+					<li><a href="#" id="SageGossetGraph" class="NamedGraph">GossetGraph</a></li>
+					<li><a href="#" id="SageGrayGraph" class="NamedGraph">GrayGraph</a></li>
+					<li><a href="#" id="SageGrotzschGraph" class="NamedGraph">GrotzschGraph</a></li>
+					<li><a href="#" id="SageHallJankoGraph" class="NamedGraph">HallJankoGraph</a></li>
+					<li><a href="#" id="SageHarborthGraph" class="NamedGraph">HarborthGraph</a></li>
+					<li><a href="#" id="SageHarriesGraph" class="NamedGraph">HarriesGraph</a></li>
+					<li><a href="#" id="SageHarriesWongGraph" class="NamedGraph">HarriesWongGraph</a></li>
+					<li><a href="#" id="SageHeawoodGraph" class="NamedGraph">HeawoodGraph</a></li>
+					<li><a href="#" id="SageHerschelGraph" class="NamedGraph">HerschelGraph</a></li>
+					<li><a href="#" id="SageHigmanSimsGraph" class="NamedGraph">HigmanSimsGraph</a></li>
+					<li><a href="#" id="SageHoffmanGraph" class="NamedGraph">HoffmanGraph</a></li>
+					<li><a href="#" id="SageHoffmanSingletonGraph" class="NamedGraph">HoffmanSingletonGraph</a></li>
+					<li><a href="#" id="SageHoltGraph" class="NamedGraph">HoltGraph</a></li>
+					<li><a href="#" id="SageHortonGraph" class="NamedGraph">HortonGraph</a></li>
+					<li><a href="#" id="SageIoninKharaghani765Graph" class="NamedGraph">IoninKharaghani765Graph</a></li>
+					<li><a href="#" id="SageJankoKharaghaniGraph" class="NamedGraph">JankoKharaghaniGraph</a></li>
+					<li><a href="#" id="SageJankoKharaghaniTonchevGraph" class="NamedGraph">JankoKharaghaniTonchevGraph</a></li>
+					<li><a href="#" id="SageKittellGraph" class="NamedGraph">KittellGraph</a></li>
+					<li><a href="#" id="SageKlein3RegularGraph" class="NamedGraph">Klein3RegularGraph</a></li>
+					<li><a href="#" id="SageKlein7RegularGraph" class="NamedGraph">Klein7RegularGraph</a></li>
+					<li><a href="#" id="SageKrackhardtKiteGraph" class="NamedGraph">KrackhardtKiteGraph</a></li>
+					<li><a href="#" id="SageLivingstoneGraph" class="NamedGraph">LivingstoneGraph</a></li>
+					<li><a href="#" id="SageLjubljanaGraph" class="NamedGraph">LjubljanaGraph</a></li>
+					<li><a href="#" id="SageLocalMcLaughlinGraph" class="NamedGraph">LocalMcLaughlinGraph</a></li>
+					<li><a href="#" id="SageM22Graph" class="NamedGraph">M22Graph</a></li>
+					<li><a href="#" id="SageMarkstroemGraph" class="NamedGraph">MarkstroemGraph</a></li>
+					<li><a href="#" id="SageMathonStronglyRegularGraph" class="NamedGraph">MathonStronglyRegularGraph</a></li>
+					<li><a href="#" id="SageMcGeeGraph" class="NamedGraph">McGeeGraph</a></li>
+					<li><a href="#" id="SageMcLaughlinGraph" class="NamedGraph">McLaughlinGraph</a></li>
+					<li><a href="#" id="SageMeredithGraph" class="NamedGraph">MeredithGraph</a></li>
+					<li><a href="#" id="SageMoebiusKantorGraph" class="NamedGraph">MoebiusKantorGraph</a></li>
+					<li><a href="#" id="SageMoserSpindle" class="NamedGraph">MoserSpindle</a></li>
+					<li><a href="#" id="SageNauruGraph" class="NamedGraph">NauruGraph</a></li>
+					<li><a href="#" id="SagePappusGraph" class="NamedGraph">PappusGraph</a></li>
+					<li><a href="#" id="SagePerkelGraph" class="NamedGraph">PerkelGraph</a></li>
+					<li><a href="#" id="SagePetersenGraph" class="NamedGraph">PetersenGraph</a></li>
+					<li><a href="#" id="SagePoussinGraph" class="NamedGraph">PoussinGraph</a></li>
+					<li><a href="#" id="SageRobertsonGraph" class="NamedGraph">RobertsonGraph</a></li>
+					<li><a href="#" id="SageSchlaefliGraph" class="NamedGraph">SchlaefliGraph</a></li>
+					<li><a href="#" id="SageShrikhandeGraph" class="NamedGraph">ShrikhandeGraph</a></li>
+					<li><a href="#" id="SageSimsGewirtzGraph" class="NamedGraph">SimsGewirtzGraph</a></li>
+					<li><a href="#" id="SageSousselierGraph" class="NamedGraph">SousselierGraph</a></li>
+					<li><a href="#" id="SageSuzukiGraph" class="NamedGraph">SuzukiGraph</a></li>
+					<li><a href="#" id="SageSylvesterGraph" class="NamedGraph">SylvesterGraph</a></li>
+					<li><a href="#" id="SageSzekeresSnarkGraph" class="NamedGraph">SzekeresSnarkGraph</a></li>
+					<li><a href="#" id="SageThomsenGraph" class="NamedGraph">ThomsenGraph</a></li>
+					<li><a href="#" id="SageTietzeGraph" class="NamedGraph">TietzeGraph</a></li>
+					<li><a href="#" id="SageTruncatedIcosidodecahedralGraph" class="NamedGraph">TruncatedIcosidodecahedralGraph</a></li>
+					<li><a href="#" id="SageTruncatedTetrahedralGraph" class="NamedGraph">TruncatedTetrahedralGraph</a></li>
+					<li><a href="#" id="SageTutte12Cage" class="NamedGraph">Tutte12Cage</a></li>
+					<li><a href="#" id="SageTutteCoxeterGraph" class="NamedGraph">TutteCoxeterGraph</a></li>
+					<li><a href="#" id="SageTutteGraph" class="NamedGraph">TutteGraph</a></li>
+					<li><a href="#" id="SageU42Graph216" class="NamedGraph">U42Graph216</a></li>
+					<li><a href="#" id="SageU42Graph540" class="NamedGraph">U42Graph540</a></li>
+					<li><a href="#" id="SageWagnerGraph" class="NamedGraph">WagnerGraph</a></li>
+					<li><a href="#" id="SageWatkinsSnarkGraph" class="NamedGraph">WatkinsSnarkGraph</a></li>
+					<li><a href="#" id="SageWellsGraph" class="NamedGraph">WellsGraph</a></li>
+					<li><a href="#" id="SageWienerArayaGraph" class="NamedGraph">WienerArayaGraph</a></li>
+				</ul>
+	   </li>
+</div>
+
+	
+	
+	<ul class="nav nav-tabs" role="tablist" id="TabControl">
+	</ul>
+	
+	<div class="tab-content" id="TabControlContent">
+	</div>
+	
+</div>
+	
+<div id="SageModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <div class="modal-body" id = "SageContainer">
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+	<div id="SageSecretOutputHole" style="display:none"></div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
