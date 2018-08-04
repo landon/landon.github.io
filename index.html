@@ -6,12 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script language="javascript" type="text/javascript">
+ function playSound(soundfile) {
+ document.getElementById("dummy").innerHTML=
+ "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+ }
+ </script>
 	</head>
 	<body>
+	<span id="dummy"></span>
 			<div id="wrapper">
 					<header id="header">
 						<div class="logo">
+						    <a href="#" onclick="playSound('first_stream.mp3');">
 							<img src = "images/brain.png" width="95%" style="vertical-align: middle"/>
+							</a>
 						</div>
 						<div class="content">
 							<div class="inner">
