@@ -1,168 +1,1435 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>landon rabern</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script language="javascript" type="text/javascript">
- function playSound(soundfile) {
- document.getElementById("dummy").innerHTML=
- "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
- }
- </script>
-	</head>
-	<body>
+
+<head>
+	<title>landon rabern</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script language="javascript" type="text/javascript">
+		function playSound(soundfile) {
+			document.getElementById("dummy").innerHTML =
+				"<embed src=\"" + soundfile + "\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+		}
+	</script>
+</head>
+
+<body>
 	<span id="dummy"></span>
-			<div id="wrapper">
-					<header id="header">
-						<div class="logo">
-						    <a href="#" onclick="playSound('content/first_stream_left.ogg');">
-							<img src = "images/brain.png" width="95%" style="vertical-align: middle"/>
-							</a>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>landon rabern</h1>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#essentials">Essentials</a></li>
-								<li><a href="#coding">Coding</a></li>
-								<li><a href="#math">Math</a></li>
-								<li><a href="#data">Data</a></li>
-								<li><a href="#about">About</a></li>
-							</ul>
-						</nav>
-					</header>
-
-					<div id="main">
-							<article id="essentials">
-								<h2 class="major">Essentials</h2>
-								i am a software engineer and mathematician.  my primary objective is to prove and build interesting things.
-								this <a href="content/hal/5minutes.html">interview</a> with my phd advisor Hal Kierstead gives some idea of the type of math i tend to work on.
-								<br><br>
-								<section>
-								<h3 class="major">Research Highlights</h3>
-									30+ <a href="https://landon.github.io/#math">publications</a> in top-tier discrete mathematics and philosophy journals. A couple of favorites:<br><br>
-									
-D.W. Cranston and L. Rabern. <a target="_blank" href="https://landon.github.io/graphdata/Papers/planar%209%20halves.pdf">Planar graphs are 9/2-colorable.</a> Journal of Combinatorial Theory, 2017.
-
-<span style="padding-left: 20px; display:block">This article is about coloring countries on a map so that adjacent countries receive distinct colors. It was
-conjectured in 1852 that any map could be colored thusly using only 4 colors. This was finally proved in 1976,
-but the proof is not human-checkable; it requires many hours of computer time to check thousands of cases.
-Finding a human-checkable proof is still an open problem. To prove that 5 colors suffice is relatively simple. We
-gave a human-checkable proof that 4.5 colors suffice; this means that we get to use 9 colors, but have to assign
-each country 2 colors.
-<br><br>
-<ul type="square">
-<li>Settled a 20-year old conjecture on the existence of such a proof.</li>
-<li>Featured on <a target="_blank" href="http://blog.computationalcomplexity.org/2015/10/a-human-readable-proof-that-every.html">Computational Complexity</a>, a popular computer science blog by Lance Fortnow & Bill Gasarch.</li>
-</ul></span>
-<br>
-B. Rabern and L. Rabern. <a target="_blank" href="http://brianrabern.net/sshlpe.pdf">A simple solution to the hardest logic puzzle ever.</a> Analysis, 68(2), April 2008.
-
-<span style="padding-left: 20px; display:block">Three gods A, B, and C are called, in no particular order, True, False, and Random. True always speaks truly,
-False always speaks falsely, but whether Random speaks truly or falsely is a completely random matter. Your
-task is to determine the identities of A, B, and C by asking three yes-no questions; each question must be put to
-exactly one god. The gods understand English, but will answer all questions in their own language, in which the
-words for yes and no are da and ja, in some order. You do not know which word means which.
-<br><br>
-<ul type="square">
-<li>Showed how to trivialize the puzzle by asking questions that elicit meaningful answers from Random.</li>
-<li>Showed how to solve the puzzle in only two questions by using paradoxes to explode god-heads.</li>
-<li>This article led to the problem getting a lot of <a target="_blank" href="http://brianrabern.net/New_Scientist_HLPE.pdf">press</a> and many <a target="_blank" href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14941881349355280851">follow-up papers</a> have been written.</li>
-</ul></span>
-								<br><br>
-								<section>
-									<h3 class="major">Recent Reading</h3>
-									<ul>
-										<li>Category Theory for Programmers</li>
-										<li><strike>Meditation: The Art of Ecstasy</strike></li>
-										<li><strike>Mastering Bitcoin</strike></li>
-										<li><strike>The Internet of Money</strike></li>
-										<li><strike>Altered Traits</strike></li>
-										<li><strike>Waking Up</strike></li>
-										<li><strike>Thus Spoke Zarathustra (again)</strike></li>
-										<li><strike>Superintelligence: Paths, Dangers, Strategies</strike></li>
-										<li><strike>Deep Learning. Adaptive computation and machine learning.</strike></li>
-										<li><strike>The Character of Consciousness.</strike></li>
-										<li><strike>The Go Programming Language.</strike></li>
-										<li><strike>The Age of Em: Work, Love, and Life when Robots Rule the Earth.</strike></li>
-										<li><strike>The LION way. Machine Learning plus Intelligent Optimization.</strike></li>
-										<li><strike>The Concious Mind.</strike></li>
-										<li><strike>Quantum Computing Since Democritus.</strike></li>
-									</ul>
-								</section>
-							</article>
-
-							<article id="coding">
-								<h2 class="major">Coding</h2>
-								<section>
-									<h3 class = "major">open source projects</h3>
-									<a target="_blank" href="https://github.com/landon">github</a><br>
-									<a target="_blank" href="https://landon.github.io/SageGraphUI/SageGraphUI.html">sage graph theory ui</a>
-									<img src="coloring.PNG" width = "400" height = "300" style="float:right"></img>
-								</section>
-								<br><br>
-								<section>
-									<h3 class = "major">lbd data</h3>
-									<a target="_blank" href="images/PrimaView.pdf">PrimaView, body camera software</a><br>
-									<a target="_blank" href="images/SafetyNet.pdf">SafetyNet, video management system</a><br>
-									<a target="_blank" href="images/SafetyViewPRO.pdf">SafetyView, video playback software</a><br>
-								</section>
-								
-							</article>
-							
-						
-							<article id="math">
-								<h2 class="major">Math</h2>
-								<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div><font size="3"><b><br /></b></font></div></div><div><b><font size="6">Articles</font></b></div><div style="font-size:13.3333px"><br /></div><div><ul style="font-size:13.3333px"><li><b style="background-color:transparent;font-size:medium;line-height:25.6px">Planar graphs are 9/2-colorable. </b><b style="background-color:transparent;font-size:medium;line-height:25px">(with <a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) <b><i>J. Combin. Theory Ser. B, </i></b><b><b style="line-height:25px"><b><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:25px"><b style="line-height:25.6px"><font size="3"><b><b>Accepted.</b></b></font></b></b></b></font></b></b></b></font></b></b></b></b></b><span style="font-size:13.3333px;background-color:transparent"> </span><b style="background-color:transparent;font-size:medium;line-height:25px"><b><font size="3"><b><a target="_blank" href="https://landon.github.io/graphdata/Papers/planar%209%20halves.pdf" rel="nofollow">(pdf)</a></b></font></b></b></li></ul><ul style="font-size:13.3333px"><li><span style="line-height:20px;background-color:transparent"><font size="3"><b><b style="font-size:13.3333px;background-color:transparent"><span style="font-size:medium">A simple solution to the hardest logic puzzle ever. (with <a target="_blank" href="http://brianrabern.net/" rel="nofollow">Brian Rabern</a>), Analysis 68(298), 105-112, 2008. </span><span style="font-size:medium"><font color="#38761D"><a target="_blank" href="http://dx.doi.org/10.1111/j.1467-8284.2007.00723.x" rel="nofollow">(doi)</a></font></span></b></b></font></span></li></ul><ul style="font-size:13.3333px"><li><span style="line-height:20px;background-color:transparent"><font size="3"><b>The Hilton--Zhao Conjecture is True for Graphs with Maximum Degree 4 </b></font></span><font size="3"><b>(with </b></font><b style="font-size:medium;line-height:25px"><a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) </b><b style="font-size:medium;line-height:25px"> </b><b style="font-size:medium;line-height:25px"><b><font size="3"><b><a target="_blank" href="https://arxiv.org/pdf/1703.00959.pdf" style="color:rgb(255,255,255);background-image:initial;background-repeat:initial" rel="nofollow">(pdf)</a></b></font></b></b></li></ul><ul style="font-size:13.3333px"><li><b style="font-size:medium;line-height:20px;background-color:transparent">A better lower bound </b><b style="font-size:medium;line-height:20px;background-color:transparent">on average degree of k-list-critical graphs.</b><b style="font-size:medium;line-height:1.25;background-color:transparent"> </b><font size="3"><b> </b></font><b style="font-size:medium;line-height:20px"><b><b style="line-height:25.6px"><font size="3" style="font-weight:normal"><b><b style="font-size:13.3333px;line-height:16.6667px;background-color:transparent"><font size="3"><a target="_blank" href="https://landon.github.io/graphdata/Papers/FurtherImprovedEdgeBound_v4.pdf" rel="nofollow">(pdf)</a></font></b></b></font></b></b></b></li></ul><ul style="font-size:13.3333px"><li><b><font size="3"><font size="3">I</font>mproved lower bounds on the number of edges in<font size="3"> list critical and online list critical graphs</font>. (with <a target="_blank" href="https://math.la.asu.edu/~halk/" rel="nofollow">Hal Kierstead</a>) </font></b><font size="3"><b> </b></font><b><font size="3"><a target="_blank" href="https://landon.github.io/graphdata/Papers/OreVizing_v8.pdf" rel="nofollow">(pdf)</a></font></b></li></ul><div><div style="font-size:13.3333px"><ul><li><font size="3" style="background-color:transparent"><b><b style="line-height:25.6px"><font size="3" style="font-weight:normal"><b>Beyond Degree Choosability </b></font></b>(with </b></font><b style="background-color:transparent;font-size:medium;line-height:25px"><a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) </b><b style="background-color:transparent;font-size:medium;line-height:25px"><b><b style="line-height:25px;background-color:transparent"><b style="background-color:transparent"><b><b style="font-size:13.3333px;line-height:24px"><font size="3"><i>Electron. J. Combin.</i>, Accepted.</font></b></b></b></b></b> </b><b style="background-color:transparent;font-size:medium;line-height:25px"><b><font size="3"><b><a target="_blank" href="https://landon.github.io/graphdata/Papers/mostlow2.pdf" style="color:rgb(255,255,255);background-image:initial;background-repeat:initial" rel="nofollow">(pdf)</a></b></font></b></b></li></ul><ul><li><b style="background-color:transparent;font-size:medium;line-height:20px">Short fans and the 5/6 bound for line graphs.</b><b style="font-size:medium;line-height:20px;background-color:rgb(102,102,102)"> </b><b style="background-color:transparent;font-size:medium;line-height:20px">(with <b style="line-height:25px"><a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a></b>) <b style="font-size:13.3333px"><b style="font-size:medium;line-height:25px"><font size="3"><b><span style="font-weight:normal"><i><b>SIAM J. Discrete Math.</b></i></span></b></font></b><b><b><b><font size="3"><b><b><b><font size="3"><b><b><b><font size="3"><b><b><span style="line-height:25px"><i>,</i></span></b></b></font></b></b></b></font></b></b></b></font></b></b></b></b></b> <b style="font-size:medium;line-height:20px;background-color:rgb(102,102,102)"><b style="background-color:transparent;line-height:25px"><b><b style="line-height:25px"><b><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:25px"><b style="line-height:25.6px"><font size="3"><b><b>Accepted.</b></b></font></b></b></b></font></b></b></b></font></b></b></b></b></b></b> <b style="line-height:20px"><b><b style="line-height:25.6px"><font size="3" style="font-weight:normal"><b><b style="font-size:13.3333px;line-height:16.6667px"><font size="3"><a target="_blank" href="https://arxiv.org/pdf/1610.03924v1" style="color:rgb(255,255,255);background-image:initial;background-position:initial;background-repeat:initial" rel="nofollow">(pdf)</a></font></b></b></font></b></b></b></li></ul><ul><li><b style="font-size:medium;background-color:transparent"><b style="line-height:25.6px"><font size="3" style="font-weight:normal"><b><b style="line-height:25.6px;background-color:transparent">Extracting list colorings from large independent sets. </b><b style="font-size:13.3333px;line-height:16.6667px;background-color:transparent"><font size="3">(with <a target="_blank" href="https://math.la.asu.edu/~halk/" rel="nofollow">Hal Kierstead</a>) </font></b><font size="3" style="font-weight:normal;background-color:transparent"><b><b style="line-height:25px"><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:28.4444px"><font size="3"><b><b style="line-height:24px"><i>J. Graph Theory, </i></b></b></font></b></b></font></b></b></b></font></b></b></b></font></b></font></b></b><font size="3"><font size="3" style="background-color:transparent"><font size="3"><b><b style="line-height:25px"><b><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:25px"><b style="line-height:25.6px"><font size="3"><b><b>Accepted.</b></b></font></b></b></b></font></b></b></b></font></b></b></b></b></font></font></font> <b style="font-size:13.3333px;line-height:16.6667px;background-color:transparent"><font size="3"><a target="_blank" href="https://landon.github.io/graphdata/Papers/KernelMagic3.pdf" rel="nofollow">(pdf)</a></font></b></li></ul><ul><li><font size="3" style="background-color:transparent"><b>Subcubic edge chromatic critical graphs <span style="line-height:1.6;background-color:transparent">have many edges </span></b></font><font size="3" style="background-color:transparent"><b>(with </b></font><b style="background-color:transparent;font-size:medium;line-height:25px"><a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) <b style="line-height:25px"><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:28.4444px"><font size="3"><b><b style="line-height:24px"><i>J. Graph Theory, </i></b></b></font></b></b></font></b></b></b></font></b></b></b><font size="3"><b><b style="line-height:25px"><b><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:25px"><b style="line-height:25.6px">Accepted.</b></b></b></font></b></b></b></font></b></b></b></b></font><span style="background-color:rgb(102,102,102)"> <b style="font-size:medium;line-height:25px"><b><font size="3"><b><a target="_blank" href="http://arxiv.org/pdf/1506.04225v1.pdf" style="color:rgb(255,255,255);background-image:initial;background-position:initial;background-repeat:initial" rel="nofollow">(pdf)</a></b></font></b></b></span></li></ul><ul><li><font size="3" style="background-color:transparent"><span style="line-height:25.6px"><b><font size="3" style="font-weight:normal"><b>List-coloring claw-free graphs with </b></font><font size="4" style="font-weight:normal">Δ</font><font size="3" style="font-weight:normal"><b> - 1 colors. </b></font></b></span></font><font size="3" style="background-color:transparent"><b><i style="font-weight:normal"><b>SIAM J. Discrete Math.</b></i><b>, Accepted. </b>(with </b></font><b style="background-color:transparent;font-size:medium;line-height:25px"><a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) </b><b style="background-color:transparent;font-size:medium;line-height:25px"> </b><b style="background-color:transparent;font-size:medium;line-height:25px"><b><font size="3"><b><a target="_blank" href="http://arxiv.org/pdf/1508.03574v1" style="color:rgb(255,255,255);background-image:initial;background-repeat:initial" rel="nofollow">(pdf)</a></b></font></b></b></li></ul><ul><li><font size="3" style="background-color:transparent"><b>Edge Lower Bounds for List Critical Graphs, via Discharging. <b style="line-height:25px"> <b><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:28.4444px"><font size="3"><b><b style="line-height:24px"><i>Combinatorica, </i></b></b></font></b></b></font></b></b></b></font></b></b></b></b><b style="background-color:transparent;line-height:25px"><b><font size="3"><b><b><b><b><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:25px"><b style="line-height:25.6px"><font size="3"><b><b>Accepted. </b></b></font></b></b></b></font></b></b></b></font></b></b></b></b></b></font></b></b></font>(with <b style="line-height:25px"><a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a></b>) <b style="font-size:medium;line-height:20px;background-color:transparent"><b><b style="line-height:25.6px"><font size="3" style="font-weight:normal"><b><b style="font-size:13.3333px;line-height:16.6667px;background-color:transparent"><font size="3"><a target="_blank" href="https://landon.github.io/graphdata/Papers/EdgeBoundDischargingFinal.pdf" rel="nofollow">(pdf)</a></font></b></b></font></b></b></b></li></ul><ul><li><font size="3" style="background-color:transparent"><b>A better lower bound on average degree of 4-list-critical graphs. <b style="line-height:25px;background-color:transparent"> <b style="background-color:transparent"><b><b style="font-size:13.3333px;line-height:24px"><font size="3"><i>Electron. J. Combin.</i>, Accepted.</font></b></b></b></b> </b></font><b style="font-size:medium;line-height:20px"><b><b style="line-height:25.6px"><font size="3" style="font-weight:normal"><b><b style="font-size:13.3333px;line-height:16.6667px"><font size="3"><a target="_blank" href="https://landon.github.io/graphdata/Papers/4ListCriticalEdgeBound_v2.pdf" style="background-color:transparent" rel="nofollow">(pdf)</a><span style="background-color:rgb(102,102,102)"> </span></font></b></b></font></b></b></b><b style="font-size:medium;line-height:20px"><b><b style="line-height:25.6px"><font size="3" style="font-weight:normal"><b><b style="font-size:13.3333px;line-height:16.6667px"><font size="3" style="background-color:rgb(102,102,102)"><a target="_blank" href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/v23i3p37" style="color:rgb(255,255,255);background-image:initial;background-position:initial;background-repeat:initial" rel="nofollow">(</a><a target="_blank" href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/v23i3p37" style="color:rgb(255,255,255);background-image:initial;background-position:initial;background-repeat:initial" rel="nofollow">ejc)</a></font></b></b></font></b></b></b></li></ul><ul><li><font size="3" style="background-color:transparent"><b>Planar graphs have independence ratio at least 3/13 (</b></font><b style="font-size:medium;line-height:25px;background-color:transparent">with <a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) <b style="background-color:transparent"><b><b style="font-size:13.3333px;line-height:24px"><font size="3"><i>Electron. J. Combin.</i>, Accepted.</font></b></b></b> </b><b style="font-size:medium;line-height:25px;background-color:transparent"><b><font size="3"><b><a target="_blank" href="https://landon.github.io/graphdata/Papers/planar%20independence%20ratio.pdf" rel="nofollow">(pdf)</a></b></font></b></b></li></ul><ul><li><font style="background-color:transparent"><b style="font-size:medium">Painting squares in <b style="line-height:25.6px"><font size="4" style="font-weight:normal">Δ</font></b>^2 - 1</b></font><font size="3" style="background-color:transparent"><b><span style="font-size:large;font-weight:normal;line-height:22.5px"> sh</span>ades. </b></font><b style="font-size:medium;line-height:25px;background-color:transparent">(with <a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) <b> <b style="font-size:13.3333px;line-height:24px"><font size="3"><i>Electron. J. Combin.</i>,  Volume 23(2), 2016.</font></b></b> </b><b style="font-size:medium;line-height:25px;background-color:transparent"><b><font size="3"><b><a target="_blank" href="https://landon.github.io/graphdata/Papers/bk-square.pdf" rel="nofollow">(pdf)</a></b></font></b></b></li></ul><ul><li><font size="3"><b>Edge-coloring via fixable subgraphs. <span style="line-height:25.6px"> (with </span></b></font><b style="font-size:medium;line-height:25px"><a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) </b><b style="font-size:medium;line-height:25px"><b><font size="3"><b><a target="_blank" href="http://arxiv.org/pdf/1507.05600.pdf" style="color:rgb(255,255,255);background-image:initial;background-repeat:initial" rel="nofollow">(pdf)</a></b></font></b></b></li></ul><ul><li><font size="3" style="font-size:medium;font-weight:bold;line-height:21px">Graphs with </font><font style="font-weight:bold;line-height:21px"><font size="4">χ = </font><font size="3"><b style="line-height:20px"><b style="line-height:25.6px"><font size="4" style="font-weight:normal">Δ</font></b></b> have big cliques. </font></font><b><font size="3">(with </font><a target="_blank" href="http://www.people.vcu.edu/~dcranston/" style="font-size:medium" rel="nofollow">Dan Cranston</a><font size="3">) </font><b style="font-size:medium;line-height:25px"><font size="3"><b><span style="font-weight:normal"><i><b>SIAM J. Discrete Math.</b></i></span></b></font></b><b><b><b><font size="3"><b><b><b><font size="3"><b><b><b><font size="3"><b><b><span style="line-height:25px"><i>, 29(4), 1792–1814</i></span><span style="line-height:25.6px">.</span></b></b></font></b></b></b></font></b></b></b></font></b></b></b></b><span style="font-size:13.3333px;line-height:16.6667px"> </span> <b style="font-size:medium"><a target="_blank" href="https://landon.github.io/graphdata/Papers/big-clique-v3b.pdf" rel="nofollow">(pdf)</a> </b><b style="font-size:13.3333px;line-height:23.7037px"><font size="3"><font size="3"><span style="line-height:24px"><font size="3"><span style="line-height:25px"><font size="3" style="line-height:19px"><a target="_blank" href="http://dx.doi.org/10.1137/130929515" rel="nofollow">(doi)</a> </font></span></font></span></font></font></b></li></ul><ul><li><font size="3"><span style="line-height:25.6px"><b>The fractional chromatic number of the plane. </b></span></font><font size="3"><b>(with </b></font><b style="font-size:medium;line-height:25px"><a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) <b><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:28.4444px"><font size="3"><b><b style="line-height:24px"><i>Combinatorica, </i></b></b></font></b></b></font></b></b></b></font></b></b></b><b style="font-size:medium;line-height:25px;background-color:transparent"><b><font size="3"><b><b><b><b><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:25px"><b style="line-height:25.6px">Accepted.</b></b></b></font></b></b></b></font></b></b></b></b></b></font></b></b><span style="font-size:13.3333px;line-height:16.6667px"> </span><a target="_blank" href="https://landon.github.io/graphdata/Papers/plane-fractional-chromatic.pdf" rel="nofollow">(pdf)</a></li></ul><ul><li><b><font size="3">A note on coloring vertex-transitive graphs. </font></b><font size="3"><b> </b></font><b style="font-size:medium;line-height:25px">(with <a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) <b style="font-size:13.3333px;line-height:24px"><font size="3"><i>Electron. J. Combin.</i>, <b style="font-size:13.3333px;line-height:24px"><font size="3"><span style="font-weight:normal"><b>Volume 22(2), 2015</b></span></font></b>.</font></b> </b><b style="font-size:medium;line-height:25px"><b><font size="3"><b><a target="_blank" href="http://www.combinatorics.org/ojs/index.php/eljc/article/download/v22i2p1/pdf" style="color:rgb(0,63,92)" rel="nofollow">(pdf)</a></b></font></b></b></li></ul><ul><li><b style="font-size:medium;line-height:25.6px">Brooks' Theorem and Beyond. </b><font size="3"><b> </b></font><b style="font-size:medium;line-height:25px">(with <a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) </b><b style="font-size:medium;line-height:25px"><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:28.4444px"><font size="3"><b><b style="line-height:24px"><i>J. Graph Theory, </i></b></b></font></b></b></font></b></b></b></font></b></b><font size="3"><b><b style="line-height:25px"><b><b><font size="3"><b><b style="line-height:28.4444px"><b><font size="3"><b><b style="line-height:25px"><b style="line-height:25.6px"><font size="3"><b><b><b><font size="3"><b><font size="3" style="font-weight:normal"><span style="line-height:25px"><span style="font-size:13px;line-height:24px"><font size="3"><b><font size="3">80</font>(3):199-225, 2015</b></font></span></span></font></b></font></b></b></b></font></b></b></b></font></b></b></b></font></b></b></b></b></font><b style="line-height:25px">. </b><a target="_blank" href="http://arxiv.org/pdf/1403.0479v1" style="color:rgb(0,63,92)" rel="nofollow">(pdf)</a> <b style="font-size:13.3333px;line-height:23.7037px"><font size="3"><font size="3"><span style="line-height:24px"><font size="3"><span style="line-height:25px"><font size="3" style="line-height:19px"><a target="_blank" href="http://dx.doi.org/10.1002/jgt.21847" rel="nofollow">(doi)</a> </font></span></font></span></font></font></b></li></ul><ul><li><font size="3"><span style="line-height:25px"><b>Conjectures equivalent to the Borodin-Kostochka conjecture that appear weaker. (with <a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) <b style="line-height:25.6px"><font size="3"><b><b style="line-height:24px"><i>European J. Combinatorics., </i></b></b></font></b></b></span></font><b><font size="3">Volume 44, Part A, February 2015, Pages 23–42 <a target="_blank" href="https://landon.github.io/graphdata/Papers/bkequiv.pdf" rel="nofollow">(pdf)</a> </font></b><b style="font-size:13.3333px;line-height:23.7037px"><font size="3"><font size="3"><span style="line-height:24px"><font size="3"><span style="line-height:25px"><font size="3" style="line-height:19px"><a target="_blank" href="http://dx.doi.org/10.1016/j.ejc.2014.09.006" rel="nofollow">(doi)</a> </font></span></font></span></font></font></b></li></ul><ul><li><b style="font-size:medium;line-height:25.6px;background-color:transparent">The list-chromatic index of K_8 and K_10. </b><b style="font-size:medium;line-height:25px"> </b><b style="font-size:medium;line-height:25px"><b><font size="3"><b><a target="_blank" href="https://landon.github.io/graphdata/Papers/K8.pdf" style="color:rgb(0,63,92)" rel="nofollow">(pdf)</a></b></font></b></b></li></ul><ul><li><b><b><b><b><font size="3"><span style="line-height:25px">Yet another proof of Brooks' theorem. </span></font></b></b></b></b><b><b><b><b><font size="3"> </font><a target="_blank" href="https://landon.github.io/graphdata/Papers/anotherbrooks.pdf" style="font-size:medium;line-height:25px" rel="nofollow">(pdf)</a></b></b></b></b></li></ul><ul><li><font size="3"><b>A game generalizing Hall's Theorem. <font size="3" style="font-weight:normal"><span style="line-height:24px"><i style="font-weight:bold">Discrete </i></span></font><font size="3" style="font-weight:normal"><span style="line-height:24px"><i style="font-weight:bold">Math., </i></span></font><b><font size="3"><b><b><font size="3" style="font-weight:normal"><b><i>320<b style="font-style:normal">(6):87-91, 2014.</b></i></b></font><font size="3" style="font-weight:normal"><span style="line-height:24px"><b>  </b></span></font><font size="3" style="font-weight:normal"><span style="line-height:24px"><b><b style="font-size:13px;line-height:21px"><font size="3"><a target="_blank" href="https://landon.github.io/graphdata/Papers/hall.pdf" rel="nofollow">(pdf)</a></font></b> </b></span></font><font size="3" style="font-weight:normal"><b><a target="_blank" href="http://dx.doi.org/10.1016/j.disc.2013.12.010" rel="nofollow">(doi)</a> </b></font> </b></b></font></b></b></font></li></ul><ul><li><font size="3"><b>Coloring graphs with dense neighborhoods. <font size="3"><b><b style="line-height:24px"><i>J. Graph Theory, </i></b><font size="3" style="font-weight:normal"><span style="line-height:25px"><span style="font-size:13px;line-height:24px"><font size="3"><b> </b></font></span></span></font><font size="3" style="font-weight:normal"><span style="line-height:25px"><span style="font-size:13px;line-height:24px"><font size="3"><b><font size="3"><font size="3"><font size="3"><b><font size="3">76</font>(4):32<font size="3">3</font>-340, 2014. </b></font></font></font></b></font></span></span></font></b></font></b></font><b><a target="_blank" href="https://landon.github.io/graphdata/Papers/DenseNeighborhoods.pdf" rel="nofollow">(pdf)</a> </b><b><font size="3"><font size="3"><span style="line-height:24px"><font size="3"><span style="line-height:25px"><font size="3" style="line-height:19px"><a target="_blank" href="http://dx.doi.org/10.1002/jgt.21768" rel="nofollow">(doi)</a> </font></span></font></span></font></font></b></li></ul><ul><li><b><b><font size="3"><span style="line-height:25px">Coloring graphs from almost maximum degree sized </span></font></b></b></li><li style="background-color:transparent;line-height:1.25;font-size:10pt;display:inline!important"><b><b><b style="line-height:1.6;font-size:10pt;background-color:transparent"><b><font size="3"><span style="line-height:25px">palettes. </span></font></b></b></b></b></li><b style="background-color:transparent;line-height:1.25;font-size:10pt"><b><font size="3"><span style="line-height:25px"><i>Dissertation</i>. (</span></font></b><b style="font-size:medium;line-height:25px"><a target="_blank" href="https://landon.github.io/graphdata/Papers/main_fancy.pdf" rel="nofollow">pdf</a>)</b></b></ul><ul><li><b><font size="3">Partitioning and coloring graphs with degree constraints. </font></b><b><font size="3"><font size="3"><span style="line-height:24px"><i>Discrete </i></span></font><font size="3"><span style="line-height:24px"><i>Math.,</i> 313(9):1028-1034, 2013</span></font></font></b><b><font size="3"><font size="3"><span style="line-height:24px"><font size="3"><b><b>.</b></b></font> </span></font></font></b><b><font size="3"><font size="3"><span style="line-height:24px"><b><font size="3"><a target="_blank" href="https://landon.github.io/graphdata/Papers/partitioning_coloring.pdf" rel="nofollow">(pdf<font size="3">)</font></a></font></b> </span></font></font></b><b><font size="3"><font size="3"><span style="line-height:24px"><font size="3"><span style="line-height:25px"><font size="3" style="line-height:19px"><b><a target="_blank" href="http://dx.doi.org/10.1016/j.disc.2013.01.007" rel="nofollow">(doi)</a>  </b></font></span></font> </span></font><a target="_blank" href="http://dl.dropbox.com/u/8609833/Papers/partitioning_coloring.pdf" rel="nofollow"><font size="3"><br /></font></a></font></b></li></ul><ul><li><font size="3"><b><font size="3" style="font-weight:normal"><b>A different short proof of Brooks' theorem. <i>Discuss. Math. Graph Theory<font size="3">,</font></i> </b></font><b> 34(3), 2014. <a target="_blank" href="https://landon.github.io/graphdata/Papers/shortbrooks.pdf" rel="nofollow">(pdf)</a> </b></b></font><b><a target="_blank" href="https://landon.github.io/graphdata/Papers/shortbrooks2.pdf" style="font-size:medium;line-height:25px" rel="nofollow">(shorter)</a> </b><b><b><b><b><a target="_blank" href="https://landon.github.io/graphdata/Papers/anotherbrooks.pdf" style="font-size:medium;line-height:25px" rel="nofollow">(shortest)</a></b></b></b></b></li></ul><ul><li><font size="3"><b>Coloring claw-free graphs with </b></font><font size="4">Δ</font><font size="3"><b> - 1 colors. </b></font><font size="3"><span style="line-height:25px"><b>(with <a target="_blank" href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan Cranston</a>) </b></span></font><font size="3"><span style="line-height:25px"><b><font size="3"><b><span style="font-weight:normal"><i><b>SIAM J. Discrete Math., 27(1):534-549, 2013</b></i><b><font size="3">.</font></b></span></b></font> </b></span></font><font size="3"><span style="line-height:25px"><b><a target="_blank" href="http://arxiv.org/pdf/1206.1269v1.pdf" rel="nofollow">(pdf)</a> </b></span></font><b><font size="3"><font size="3"><span style="line-height:24px"><font size="3"><span style="line-height:25px"><font size="3" style="line-height:19px"><b><a target="_blank" href="http://dx.doi.org/10.1137/12088015X" rel="nofollow">(doi)</a></b></font></span></font></span></font></font></b></li></ul><ul><li><b><b><font size="3">A note on vertex partitions. <a target="_blank" href="https://landon.github.io/graphdata/Papers/partition_note.pdf" rel="nofollow">(pdf)</a></font></b></b></li></ul><ul><li><font size="3"><span style="line-height:25px"><span style="font-size:13px;line-height:24px"><font size="3"><b>Destroying non-complete regular components in graph partitions. <i>J. Graph Theory</i>, </b></font></span></span></font><font size="3"><span style="line-height:25px"><span style="font-size:13px;line-height:24px"><font size="3"><b><font size="3"><font size="3"><font size="3"><b><font size="3">72</font>(<font size="3">2</font>):<font size="3">123</font>-<font size="3">12</font>7, 201<font size="3">3</font>.</b></font></font></font> (</b><a target="_blank" href="https://landon.github.io/graphdata/Papers/Destroying%20NonComplete.pdf" style="color:rgb(68,90,169)" rel="nofollow"><b>pdf</b></a><b>) </b></font></span><font size="3" style="line-height:19px"><b><a target="_blank" href="http://dx.doi.org/10.1002/jgt.21634" rel="nofollow">(doi)</a></b></font></span></font></li></ul><ul><li><font size="3"><span style="line-height:24px"><b>Graphs with chromatic number close to maximum degree. (with <a target="_blank" href="http://www.math.uiuc.edu/~kostochk/" rel="nofollow">Alexandr Kostochka</a> and </b></span></font><font size="3"><span style="line-height:24px"><b><a target="_blank" href="http://www.tu-ilmenau.de/?id=2718" rel="nofollow">Michael Stiebitz</a>) </b></span></font><font size="3"><span style="line-height:24px"><i style="font-weight:bold">Discrete </i></span></font><font size="3"><span style="line-height:24px"><i style="font-weight:bold">Math.,</i>  </span></font><font size="3"><b><i>312<b style="font-style:normal;line-height:25px">(6):1273-1281, 2012.</b></i></b></font><font size="3"><span style="line-height:24px"><b>  </b></span></font><b><b><font size="3"><a target="_blank" href="https://landon.github.io/graphdata/Papers/dm-rs.pdf" rel="nofollow">(pdf)</a></font></b></b><font size="3"><span style="line-height:24px"><b> </b></span></font><font size="3"><b><a target="_blank" href="http://dx.doi.org/10.1016/j.disc.2011.12.014" rel="nofollow">(doi)</a> </b></font></li></ul><ul style="font-weight:bold;line-height:19px"><li><span style="font-weight:normal;line-height:24px"><b><font size="3">A strengthening of Brooks' Theorem for line graphs. <i>Electron. J. Combin.</i>, <span style="font-weight:normal"><b>N145, Volume 18(1), 2011</b></span>. <a target="_blank" href="https://landon.github.io/graphdata/Papers/LineGraph_new.pdf" rel="nofollow">(pdf)</a></font></b></span></li><li style="list-style-type:square;font-weight:normal"><p><font size="4">Δ</font><font size="3"><b>-Critical graphs with small high vertex cliques. <i>J. Combin. Theory Ser. B,  102<b style="font-style:normal;line-height:25px">(1):126-130, 2012.</b> </i> (</b><a target="_blank" href="https://landon.github.io/graphdata/Papers/DeltaCritical.pdf" style="color:rgb(68,90,169)" rel="nofollow"><b>pdf</b></a><b>) <a target="_blank" href="http://dx.doi.org/10.1016/j.jctb.2011.05.003" rel="nofollow">(doi)</a></b></font></p></li></ul></div><div><ul style="font-size:13.3333px"><li><p><font size="3"><font size="3"><font size="3"><b>On hitting all maximum cliques with an independent set.   <i>J. Graph Theory</i>, 66(1):32-37, 2011. (</b><a target="_blank" href="http://arxiv.org/pdf/0907.3705v3" rel="nofollow"><b>pdf</b></a><b>) <a target="_blank" href="http://dx.doi.org/10.1002/jgt.20487" rel="nofollow">(doi)</a></b></font></font></font></p></li><li><font size="3"><b>The Borodin-Kostochka conjecture for graphs containing a doubly critical edge.  <i>Electron. J. Combin.</i>, N22, Volume 14(1), 2007. (</b><a target="_blank" href="https://landon.github.io/graphdata/Papers/v14i1n22.pdf" rel="nofollow"><b>pdf</b></a><b>)</b> <p style="display:inline!important"><b> </b></p></font></li></ul><ul><li style="font-size:13.3333px"><p align="left"><font size="3"><b>A note on Reed’s conjecture. </b><i><b>SIAM J. Discrete Math.</b></i><b>, 22(2):820-827, 2008. (</b><a target="_blank" href="https://landon.github.io/graphdata/Papers/A%20Note%20On%20Reed%27s%20Conjecture.pdf" rel="nofollow"><b>pdf</b></a><b>) </b><span style="line-height:24px"><b><a target="_blank" href="http://dx.doi.org/10.1137/060659193" style="color:rgb(68,90,169)" rel="nofollow">(doi)</a></b></span></font></p></li><li style="font-size:13.3333px"><p align="left"><font size="3"><b>On graph associations. </b><b><span style="font-weight:normal"><i><b>SIAM J. Discrete Math.</b></i></span>, 20(2):529–535, 2006. (</b><a target="_blank" href="https://landon.github.io/graphdata/Papers/Associate3.pdf" rel="nofollow"><b>pdf</b></a><b>) </b><span style="line-height:24px"><b> <a target="_blank" href="http://dx.doi.org/10.1137/050626545" style="color:rgb(68,90,169)" rel="nofollow">(doi)</a></b></span></font></p></li><li><p align="left"><span style="background-color:transparent;line-height:27px"><b><font size="3">Dangerous reference graphs and semantic paradoxes. </font></b></span><span style="font-size:medium;background-color:transparent;font-weight:800;line-height:27px">(with <a target="_blank" href="http://brianrabern.net/" rel="nofollow">Brian Rabern</a> and <a target="_blank" href="http://www.math.clemson.edu/~macaule/" rel="nofollow">Matthew Macauley</a>),</span><span style="font-size:13.3333px;background-color:transparent;font-weight:800;line-height:27px"><span style="font-size:medium"> </span></span><span style="font-size:13.3333px;background-color:transparent;line-height:24px"><font size="3"><b><i>Journal of Philosophical Logic, </i><span style="line-height:27px">42(5), 727-765, 2013.</span> </b></font></span><span style="font-size:13.3333px;background-color:transparent;line-height:27px"><b><span style="font-size:medium"> <a target="_blank" href="http://dx.doi.org/10.1007/s10992-012-9246-2" rel="nofollow">(doi)</a></span></b></span></p></li><li style="font-size:13.3333px"><p align="left"><b style="font-size:13.3333px;background-color:transparent"><font size="3">Applying groebner basis techniques to group theory. <i>Journal of Pure and Applied Algebra</i>, 210(1):137-140, 2007. (<a target="_blank" href="http://dx.doi.org/10.1016/j.jpaa.2006.09.001" rel="nofollow">doi</a>)</font></b></p></li></ul><div><font size="3"><br /></font></div><div><b><font size="6">Talks</font></b></div><div><ul style="font-size:13.3333px"><li><font size="3"><b><span style="line-height:24px">A common generalization of Hall's theorem and Vizing's </span></b></font></li><li style="font-size:13.3333px;background-color:transparent;display:inline!important"><font size="3"><b><b style="line-height:1.6;background-color:transparent"><span style="line-height:24px">edge-coloring theorem</span></b></b></font></li><font size="3" style="background-color:transparent"><b><font size="3" style="background-color:transparent"><b><span style="font-weight:normal;line-height:24px"> (</span><span style="line-height:24px">Miami University Colloquium</span><span style="font-weight:normal;line-height:24px">) </span></b></font><b style="line-height:24px;background-color:transparent"><span style="font-weight:normal"><b>(</b><a target="_blank" href="https://landon.github.io/graphdata/Papers/hall%20vizing%20talk.pdf" style="color:rgb(68,90,169)" rel="nofollow"><b>slides</b></a><b>)</b></span></b></b></font></ul><ul style="font-size:13.3333px"><li><font size="3"><b><span style="line-height:24px">Extending Alon-Tarsi Orientations (AMS Special Session on Structural and Extremal Problems) </span></b></font><b style="line-height:24px;font-size:medium"><span style="font-weight:normal"><b>(</b><a target="_blank" href="https://landon.github.io/graphdata/Papers/alon%20tarsi%20talk.pdf" style="color:rgb(68,90,169)" rel="nofollow"><b>slides</b></a><b>)</b></span></b></li></ul><ul style="font-size:13.3333px"><li style="line-height:24px"><font size="3"><b>List coloring with large maximum degree. <a target="_blank" href="https://landon.github.io/graphdata/Papers/poster_landscape.pdf" rel="nofollow">(poster)</a></b></font></li></ul><ul style="font-size:13.3333px"><li style="line-height:24px"><font size="3"><b><span style="font-weight:normal"><b>An improvement on Brooks' theorem (CU-Denver Discrete Math Seminar). (</b><a target="_blank" href="https://landon.github.io/graphdata/Papers/brooks_beamer.pdf" style="color:rgb(68,90,169)" rel="nofollow"><b>slides</b></a><b>)</b></span></b></font></li></ul><ul style="font-size:13.3333px"><li style="line-height:24px"><font size="3"><b>Improving Brooks' theorem (The 26th Clemson Conference on Discrete Math and Algorithms, 2011) </b></font><b style="font-size:medium"><span style="font-weight:normal"><b>(</b><a target="_blank" href="https://landon.github.io/graphdata/Papers/brooks_beamer%202.pdf" style="color:rgb(68,90,169)" rel="nofollow"><b>slides</b></a><b>)</b></span></b></li></ul></div></div></div></div></div></td></tr></tbody></table>
-							</article>
-							
-							<article id ="data">
-								<h2 class="major">Data</h2>
-								the <a target="_blank" href="http://www.openproblemgarden.org/op/the_borodin_kostochka_conjecture">borodin-kostochka conjecture</a> from the 1970s was my dissertation project.  
-								i did not prove it, but made substantial progress. the data here can be used to severely restrict possible counterexamples to the conjecture.
-								<br><br>
-								<div><div><a target="_blank" href="https://landon.github.io/graphdata/borodinkostochka/offline/index.html" rel="nofollow">Borodin-Kostochka offline</a><br /></div><div><a target="_blank" href="https://landon.github.io/graphdata/borodinkostochka/online/index.html" rel="nofollow">Borodin-Kostochka online</a><br /></div><div><a target="_blank" href="https://landon.github.io/graphdata/borodinkostochka/AT/index.html" rel="nofollow">Borodin-Kostochka Alon-Tarsi</a><br /></div><div><a target="_blank" href="https://landon.github.io/graphdata/borodinkostochka/2fold/index.html" rel="nofollow">Borodin-Kostochka 2-fold</a><br /></div><div><a target="_blank" href="https://landon.github.io/graphdata/borodinkostochka/3fold/index.html" rel="nofollow">Borodin-Kostochka 3-fold</a></div></div>
-							</article>
-							
-							<article id="about">
-								<h2 class="major">About</h2>
-								when i was a child, i was obsessed with machine intelligence, i coded a strong chess AI (codenamed Betsy) and experimented with using
-								neural networks in Betsy, both for the static evaluation at leaf nodes and within the tree for pruning.  the networks learned from self-play to get
-								about as good as my hand-tuned functions (discounting the slowdown incurred by sigmoid evaluation).  i concluded that to do better, i would need
-								to use raw game state data instead of the set of features i preselected as network inputs; unfortunately, this was 2000 and i did not have nearly
-								enough processing power to do so.  
-								<br><br>
-								to avoid spinning my wheels while waiting for faster hardware, i decided to put my machine intelligence ambitions on hold and study mathematics instead.
-								my first year as a math major was spent abroad at utrecht university in the netherlands.  my dutch was pretty poor, but luckily all the math textbooks
-								were in english.  learning to learn from just a textbook was painful at first, but this method of learning has been indispensable ever since.
-								<br><br>
-								in 2005 i felt the pull of making real things and left my math phd program (where i was researching fun things like quantum groups) to work
-								for a defense contractor.  we simulated nuclear weapons effects like damage caused to hardware by electromagnetic pulse.  this work was interesting,
-								but for family reasons, after about a year, i moved to colorado and took a job for a subsidiary of goldman sachs.
-								<br><br>
-								the goldman sachs job was not particularly exciting and i had lots of downtime.  i had just read the book <i>the man who loved only numbers</i> about paul erdős;  
-								a homeless math genius that traveled around for decades to work on hard problems with other discrete mathematicians.  i decided to use my work downtime to 
-								teach myself graph theory and see if i was smart enough to play with these discrete mathematicians.  this was in 2007, it took three years and a lot more than
-								just my work downtime, but in 2010 i made a breakthrough, <a target="_blank" href="https://doi.org/10.1016/j.jctb.2011.05.003">proving</a> a conjecture of two prominent graph theorists (alexandr kostochka and hal kierstead).  i made 
-								arrangements with kierstead to come out to arizona state and finish my phd.
-								<br><br>
-								now it is 2018, i have satisfied my curiosity about playing with erdős's friends and achieved the best possible erdős number of 2 (since erdős no longer lives).
-								neural networks are all over the news, now called <i>deep learning</i>, researchers are having great success; hardware is now fast enough and there are massive 
-								amounts of data to play with.  it is past time for me to get back to my childhood obsession.   
-							</article>
-					</div>
+	<div id="wrapper">
+		<header id="header">
+			<div class="logo">
+				<a href="#" onclick="playSound('content/first_stream_left.ogg');">
+					<img src="images/brain.png" width="95%" style="vertical-align: middle" />
+				</a>
 			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>landon rabern</h1>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#essentials">Essentials</a></li>
+					<li><a href="#coding">Coding</a></li>
+					<li><a href="#math">Math</a></li>
+					<li><a href="#data">Data</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</nav>
+		</header>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<div id="main">
+			<article id="essentials">
+				<h2 class="major">Essentials</h2>
+				i am a software engineer and mathematician. my primary objective is to prove and build interesting
+				things.
+				this <a href="content/hal/5minutes.html">interview</a> with my phd advisor Hal Kierstead gives some idea
+				of the type of math i tend to work on.
+				<br><br>
+				<section>
+					<h3 class="major">Research Highlights</h3>
+					30+ <a href="https://landon.github.io/#math">publications</a> in top-tier discrete mathematics and
+					philosophy journals. A couple of favorites:<br><br>
 
-	</body>
+					D.W. Cranston and L. Rabern. <a target="_blank"
+						href="https://landon.github.io/graphdata/Papers/planar%209%20halves.pdf">Planar graphs are
+						9/2-colorable.</a> Journal of Combinatorial Theory, 2017.
+
+					<span style="padding-left: 20px; display:block">This article is about coloring countries on a map so
+						that adjacent countries receive distinct colors. It was
+						conjectured in 1852 that any map could be colored thusly using only 4 colors. This was finally
+						proved in 1976,
+						but the proof is not human-checkable; it requires many hours of computer time to check thousands
+						of cases.
+						Finding a human-checkable proof is still an open problem. To prove that 5 colors suffice is
+						relatively simple. We
+						gave a human-checkable proof that 4.5 colors suffice; this means that we get to use 9 colors,
+						but have to assign
+						each country 2 colors.
+						<br><br>
+						<ul type="square">
+							<li>Settled a 20-year old conjecture on the existence of such a proof.</li>
+							<li>Featured on <a target="_blank"
+									href="http://blog.computationalcomplexity.org/2015/10/a-human-readable-proof-that-every.html">Computational
+									Complexity</a>, a popular computer science blog by Lance Fortnow & Bill Gasarch.
+							</li>
+						</ul>
+					</span>
+					<br>
+					B. Rabern and L. Rabern. <a target="_blank" href="http://brianrabern.net/sshlpe.pdf">A simple
+						solution to the hardest logic puzzle ever.</a> Analysis, 68(2), April 2008.
+
+					<span style="padding-left: 20px; display:block">Three gods A, B, and C are called, in no particular
+						order, True, False, and Random. True always speaks truly,
+						False always speaks falsely, but whether Random speaks truly or falsely is a completely random
+						matter. Your
+						task is to determine the identities of A, B, and C by asking three yes-no questions; each
+						question must be put to
+						exactly one god. The gods understand English, but will answer all questions in their own
+						language, in which the
+						words for yes and no are da and ja, in some order. You do not know which word means which.
+						<br><br>
+						<ul type="square">
+							<li>Showed how to trivialize the puzzle by asking questions that elicit meaningful answers
+								from Random.</li>
+							<li>Showed how to solve the puzzle in only two questions by using paradoxes to explode
+								god-heads.</li>
+							<li>This article led to the problem getting a lot of <a target="_blank"
+									href="http://brianrabern.net/New_Scientist_HLPE.pdf">press</a> and many <a
+									target="_blank"
+									href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14941881349355280851">follow-up
+									papers</a> have been written.</li>
+						</ul>
+					</span>
+			</article>
+
+			<article id="coding">
+				<h2 class="major">Coding</h2>
+				<section>
+					<h3 class="major">open source projects</h3>
+					<a target="_blank" href="https://github.com/landon">github</a><br>
+					<a target="_blank" href="https://landon.github.io/SageGraphUI/SageGraphUI.html">sage graph theory
+						ui</a>
+					<img src="coloring.PNG" width="400" height="300" style="float:right"></img>
+				</section>
+				<br><br>
+				<section>
+					<h3 class="major">lbd data</h3>
+					<a target="_blank" href="images/PrimaView.pdf">PrimaView, body camera software</a><br>
+					<a target="_blank" href="images/SafetyNet.pdf">SafetyNet, video management system</a><br>
+					<a target="_blank" href="images/SafetyViewPRO.pdf">SafetyView, video playback software</a><br>
+				</section>
+
+			</article>
+
+
+			<article id="math">
+				<h2 class="major">Math</h2>
+				<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0"
+					class="sites-layout-name-one-column sites-layout-hbox">
+					<tbody>
+						<tr>
+							<td class="sites-layout-tile sites-tile-name-content-1">
+								<div dir="ltr">
+									<div>
+										<div>
+											<font size="3"><b><br /></b></font>
+										</div>
+									</div>
+									<div><b>
+											<font size="6">Articles</font>
+										</b></div>
+									<div style="font-size:13.3333px"><br /></div>
+									<div>
+										<ul style="font-size:13.3333px">
+											<li><b
+													style="background-color:transparent;font-size:medium;line-height:25.6px">Planar
+													graphs are 9/2-colorable. </b><b
+													style="background-color:transparent;font-size:medium;line-height:25px">(with
+													<a target="_blank" href="http://www.people.vcu.edu/~dcranston/"
+														rel="nofollow">Dan Cranston</a>) <b><i>J. Combin. Theory Ser. B,
+														</i></b><b><b style="line-height:25px"><b><b>
+																	<font size="3"><b><b
+																				style="line-height:28.4444px"><b>
+																					<font size="3"><b><b
+																								style="line-height:25px"><b
+																									style="line-height:25.6px">
+																									<font size="3">
+																										<b><b>Accepted.</b></b>
+																									</font>
+																								</b></b></b></font>
+																				</b></b></b></font>
+																</b></b></b></b></b><span
+													style="font-size:13.3333px;background-color:transparent"> </span><b
+													style="background-color:transparent;font-size:medium;line-height:25px"><b>
+														<font size="3"><b><a target="_blank"
+																	href="https://landon.github.io/graphdata/Papers/planar%209%20halves.pdf"
+																	rel="nofollow">(pdf)</a></b></font>
+													</b></b></li>
+										</ul>
+										<ul style="font-size:13.3333px">
+											<li><span style="line-height:20px;background-color:transparent">
+													<font size="3"><b><b
+																style="font-size:13.3333px;background-color:transparent"><span
+																	style="font-size:medium">A simple solution to the
+																	hardest logic puzzle ever. (with <a target="_blank"
+																		href="http://brianrabern.net/"
+																		rel="nofollow">Brian Rabern</a>), Analysis
+																	68(298), 105-112, 2008. </span><span
+																	style="font-size:medium">
+																	<font color="#38761D"><a target="_blank"
+																			href="http://dx.doi.org/10.1111/j.1467-8284.2007.00723.x"
+																			rel="nofollow">(doi)</a></font>
+																</span></b></b></font>
+												</span></li>
+										</ul>
+										<ul style="font-size:13.3333px">
+											<li><span style="line-height:20px;background-color:transparent">
+													<font size="3"><b>The Hilton--Zhao Conjecture is True for Graphs
+															with Maximum Degree 4 </b></font>
+												</span>
+												<font size="3"><b>(with </b></font><b
+													style="font-size:medium;line-height:25px"><a target="_blank"
+														href="http://www.people.vcu.edu/~dcranston/" rel="nofollow">Dan
+														Cranston</a>) </b><b style="font-size:medium;line-height:25px">
+												</b><b style="font-size:medium;line-height:25px"><b>
+														<font size="3"><b><a target="_blank"
+																	href="https://arxiv.org/pdf/1703.00959.pdf"
+																	style="color:rgb(255,255,255);background-image:initial;background-repeat:initial"
+																	rel="nofollow">(pdf)</a></b></font>
+													</b></b>
+											</li>
+										</ul>
+										<ul style="font-size:13.3333px">
+											<li><b
+													style="font-size:medium;line-height:20px;background-color:transparent">A
+													better lower bound </b><b
+													style="font-size:medium;line-height:20px;background-color:transparent">on
+													average degree of k-list-critical graphs.</b><b
+													style="font-size:medium;line-height:1.25;background-color:transparent">
+												</b>
+												<font size="3"><b> </b></font><b
+													style="font-size:medium;line-height:20px"><b><b
+															style="line-height:25.6px">
+															<font size="3" style="font-weight:normal"><b><b
+																		style="font-size:13.3333px;line-height:16.6667px;background-color:transparent">
+																		<font size="3"><a target="_blank"
+																				href="https://landon.github.io/graphdata/Papers/FurtherImprovedEdgeBound_v4.pdf"
+																				rel="nofollow">(pdf)</a></font>
+																	</b></b></font>
+														</b></b></b>
+											</li>
+										</ul>
+										<ul style="font-size:13.3333px">
+											<li><b>
+													<font size="3">
+														<font size="3">I</font>mproved lower bounds on the number of
+														edges in<font size="3"> list critical and online list critical
+															graphs</font>. (with <a target="_blank"
+															href="https://math.la.asu.edu/~halk/" rel="nofollow">Hal
+															Kierstead</a>)
+													</font>
+												</b>
+												<font size="3"><b> </b></font><b>
+													<font size="3"><a target="_blank"
+															href="https://landon.github.io/graphdata/Papers/OreVizing_v8.pdf"
+															rel="nofollow">(pdf)</a></font>
+												</b>
+											</li>
+										</ul>
+										<div>
+											<div style="font-size:13.3333px">
+												<ul>
+													<li>
+														<font size="3" style="background-color:transparent"><b><b
+																	style="line-height:25.6px">
+																	<font size="3" style="font-weight:normal"><b>Beyond
+																			Degree Choosability </b></font>
+																</b>(with </b></font><b
+															style="background-color:transparent;font-size:medium;line-height:25px"><a
+																target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																rel="nofollow">Dan Cranston</a>) </b><b
+															style="background-color:transparent;font-size:medium;line-height:25px"><b><b
+																	style="line-height:25px;background-color:transparent"><b
+																		style="background-color:transparent"><b><b
+																				style="font-size:13.3333px;line-height:24px">
+																				<font size="3"><i>Electron. J.
+																						Combin.</i>, Accepted.</font>
+																			</b></b></b></b></b> </b><b
+															style="background-color:transparent;font-size:medium;line-height:25px"><b>
+																<font size="3"><b><a target="_blank"
+																			href="https://landon.github.io/graphdata/Papers/mostlow2.pdf"
+																			style="color:rgb(255,255,255);background-image:initial;background-repeat:initial"
+																			rel="nofollow">(pdf)</a></b></font>
+															</b></b>
+													</li>
+												</ul>
+												<ul>
+													<li><b
+															style="background-color:transparent;font-size:medium;line-height:20px">Short
+															fans and the 5/6 bound for line graphs.</b><b
+															style="font-size:medium;line-height:20px;background-color:rgb(102,102,102)">
+														</b><b
+															style="background-color:transparent;font-size:medium;line-height:20px">(with
+															<b style="line-height:25px"><a target="_blank"
+																	href="http://www.people.vcu.edu/~dcranston/"
+																	rel="nofollow">Dan Cranston</a></b>) <b
+																style="font-size:13.3333px"><b
+																	style="font-size:medium;line-height:25px">
+																	<font size="3"><b><span
+																				style="font-weight:normal"><i><b>SIAM J.
+																						Discrete
+																						Math.</b></i></span></b></font>
+																</b><b><b><b>
+																			<font size="3"><b><b><b>
+																							<font size="3"><b><b><b>
+																											<font
+																												size="3">
+																												<b><b><span
+																															style="line-height:25px"><i>,</i></span></b></b>
+																											</font>
+																										</b></b></b>
+																							</font>
+																						</b></b></b></font>
+																		</b></b></b></b></b> <b
+															style="font-size:medium;line-height:20px;background-color:rgb(102,102,102)"><b
+																style="background-color:transparent;line-height:25px"><b><b
+																		style="line-height:25px"><b><b>
+																				<font size="3"><b><b
+																							style="line-height:28.4444px"><b>
+																								<font size="3"><b><b
+																											style="line-height:25px"><b
+																												style="line-height:25.6px">
+																												<font
+																													size="3">
+																													<b><b>Accepted.</b></b>
+																												</font>
+																											</b></b></b>
+																								</font>
+																							</b></b></b></font>
+																			</b></b></b></b></b></b> <b
+															style="line-height:20px"><b><b style="line-height:25.6px">
+																	<font size="3" style="font-weight:normal"><b><b
+																				style="font-size:13.3333px;line-height:16.6667px">
+																				<font size="3"><a target="_blank"
+																						href="https://arxiv.org/pdf/1610.03924v1"
+																						style="color:rgb(255,255,255);background-image:initial;background-position:initial;background-repeat:initial"
+																						rel="nofollow">(pdf)</a></font>
+																			</b></b></font>
+																</b></b></b></li>
+												</ul>
+												<ul>
+													<li><b style="font-size:medium;background-color:transparent"><b
+																style="line-height:25.6px">
+																<font size="3" style="font-weight:normal"><b><b
+																			style="line-height:25.6px;background-color:transparent">Extracting
+																			list colorings from large independent sets.
+																		</b><b
+																			style="font-size:13.3333px;line-height:16.6667px;background-color:transparent">
+																			<font size="3">(with <a target="_blank"
+																					href="https://math.la.asu.edu/~halk/"
+																					rel="nofollow">Hal Kierstead</a>)
+																			</font>
+																		</b>
+																		<font size="3"
+																			style="font-weight:normal;background-color:transparent">
+																			<b><b style="line-height:25px"><b>
+																						<font size="3"><b><b
+																									style="line-height:28.4444px"><b>
+																										<font size="3">
+																											<b><b
+																													style="line-height:28.4444px">
+																													<font
+																														size="3">
+																														<b><b
+																																style="line-height:24px"><i>J.
+																																	Graph
+																																	Theory,
+																																</i></b></b>
+																													</font>
+																												</b></b>
+																										</font>
+																									</b></b></b></font>
+																					</b></b></b></font>
+																	</b></font>
+															</b></b>
+														<font size="3">
+															<font size="3" style="background-color:transparent">
+																<font size="3"><b><b style="line-height:25px"><b><b>
+																					<font size="3"><b><b
+																								style="line-height:28.4444px"><b>
+																									<font size="3"><b><b
+																												style="line-height:25px"><b
+																													style="line-height:25.6px">
+																													<font
+																														size="3">
+																														<b><b>Accepted.</b></b>
+																													</font>
+																												</b></b></b>
+																									</font>
+																								</b></b></b></font>
+																				</b></b></b></b></font>
+															</font>
+														</font> <b
+															style="font-size:13.3333px;line-height:16.6667px;background-color:transparent">
+															<font size="3"><a target="_blank"
+																	href="https://landon.github.io/graphdata/Papers/KernelMagic3.pdf"
+																	rel="nofollow">(pdf)</a></font>
+														</b>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3" style="background-color:transparent"><b>Subcubic
+																edge chromatic critical graphs <span
+																	style="line-height:1.6;background-color:transparent">have
+																	many edges </span></b></font>
+														<font size="3" style="background-color:transparent"><b>(with
+															</b></font><b
+															style="background-color:transparent;font-size:medium;line-height:25px"><a
+																target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																rel="nofollow">Dan Cranston</a>) <b
+																style="line-height:25px"><b>
+																	<font size="3"><b><b
+																				style="line-height:28.4444px"><b>
+																					<font size="3"><b><b
+																								style="line-height:28.4444px">
+																								<font size="3"><b><b
+																											style="line-height:24px"><i>J.
+																												Graph
+																												Theory,
+																											</i></b></b>
+																								</font>
+																							</b></b></font>
+																				</b></b></b></font>
+																</b></b></b>
+														<font size="3"><b><b style="line-height:25px"><b><b>
+																			<font size="3"><b><b
+																						style="line-height:28.4444px"><b>
+																							<font size="3"><b><b
+																										style="line-height:25px"><b
+																											style="line-height:25.6px">Accepted.</b></b></b>
+																							</font>
+																						</b></b></b></font>
+																		</b></b></b></b></font><span
+															style="background-color:rgb(102,102,102)"> <b
+																style="font-size:medium;line-height:25px"><b>
+																	<font size="3"><b><a target="_blank"
+																				href="http://arxiv.org/pdf/1506.04225v1.pdf"
+																				style="color:rgb(255,255,255);background-image:initial;background-position:initial;background-repeat:initial"
+																				rel="nofollow">(pdf)</a></b></font>
+																</b></b></span>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3" style="background-color:transparent"><span
+																style="line-height:25.6px"><b>
+																	<font size="3" style="font-weight:normal">
+																		<b>List-coloring claw-free graphs with </b>
+																	</font>
+																	<font size="4" style="font-weight:normal">Δ</font>
+																	<font size="3" style="font-weight:normal"><b> - 1
+																			colors. </b></font>
+																</b></span></font>
+														<font size="3" style="background-color:transparent"><b><i
+																	style="font-weight:normal"><b>SIAM J. Discrete
+																		Math.</b></i><b>, Accepted. </b>(with </b>
+														</font><b
+															style="background-color:transparent;font-size:medium;line-height:25px"><a
+																target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																rel="nofollow">Dan Cranston</a>) </b><b
+															style="background-color:transparent;font-size:medium;line-height:25px">
+														</b><b
+															style="background-color:transparent;font-size:medium;line-height:25px"><b>
+																<font size="3"><b><a target="_blank"
+																			href="http://arxiv.org/pdf/1508.03574v1"
+																			style="color:rgb(255,255,255);background-image:initial;background-repeat:initial"
+																			rel="nofollow">(pdf)</a></b></font>
+															</b></b>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3" style="background-color:transparent"><b>Edge
+																Lower Bounds for List Critical Graphs, via Discharging.
+																<b style="line-height:25px"> <b><b>
+																			<font size="3"><b><b
+																						style="line-height:28.4444px"><b>
+																							<font size="3"><b><b
+																										style="line-height:28.4444px">
+																										<font size="3">
+																											<b><b
+																													style="line-height:24px"><i>Combinatorica,
+																													</i></b></b>
+																										</font>
+																									</b></b></font>
+																						</b></b></b></font>
+																		</b></b></b></b><b
+																style="background-color:transparent;line-height:25px"><b>
+																	<font size="3"><b><b><b><b><b>
+																							<font size="3"><b><b
+																										style="line-height:28.4444px"><b>
+																											<font
+																												size="3">
+																												<b><b
+																														style="line-height:25px"><b
+																															style="line-height:25.6px">
+																															<font
+																																size="3">
+																																<b><b>Accepted.
+																																	</b></b>
+																															</font>
+																														</b></b></b>
+																											</font>
+																										</b></b></b>
+																							</font>
+																						</b></b></b></b></b></font>
+																</b></b></font>(with <b style="line-height:25px"><a
+																target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																rel="nofollow">Dan Cranston</a></b>) <b
+															style="font-size:medium;line-height:20px;background-color:transparent"><b><b
+																	style="line-height:25.6px">
+																	<font size="3" style="font-weight:normal"><b><b
+																				style="font-size:13.3333px;line-height:16.6667px;background-color:transparent">
+																				<font size="3"><a target="_blank"
+																						href="https://landon.github.io/graphdata/Papers/EdgeBoundDischargingFinal.pdf"
+																						rel="nofollow">(pdf)</a></font>
+																			</b></b></font>
+																</b></b></b>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3" style="background-color:transparent"><b>A better
+																lower bound on average degree of 4-list-critical graphs.
+																<b
+																	style="line-height:25px;background-color:transparent">
+																	<b style="background-color:transparent"><b><b
+																				style="font-size:13.3333px;line-height:24px">
+																				<font size="3"><i>Electron. J.
+																						Combin.</i>, Accepted.</font>
+																			</b></b></b></b> </b></font><b
+															style="font-size:medium;line-height:20px"><b><b
+																	style="line-height:25.6px">
+																	<font size="3" style="font-weight:normal"><b><b
+																				style="font-size:13.3333px;line-height:16.6667px">
+																				<font size="3"><a target="_blank"
+																						href="https://landon.github.io/graphdata/Papers/4ListCriticalEdgeBound_v2.pdf"
+																						style="background-color:transparent"
+																						rel="nofollow">(pdf)</a><span
+																						style="background-color:rgb(102,102,102)">
+																					</span></font>
+																			</b></b></font>
+																</b></b></b><b
+															style="font-size:medium;line-height:20px"><b><b
+																	style="line-height:25.6px">
+																	<font size="3" style="font-weight:normal"><b><b
+																				style="font-size:13.3333px;line-height:16.6667px">
+																				<font size="3"
+																					style="background-color:rgb(102,102,102)">
+																					<a target="_blank"
+																						href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/v23i3p37"
+																						style="color:rgb(255,255,255);background-image:initial;background-position:initial;background-repeat:initial"
+																						rel="nofollow">(</a><a
+																						target="_blank"
+																						href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/v23i3p37"
+																						style="color:rgb(255,255,255);background-image:initial;background-position:initial;background-repeat:initial"
+																						rel="nofollow">ejc)</a></font>
+																			</b></b></font>
+																</b></b></b>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3" style="background-color:transparent"><b>Planar
+																graphs have independence ratio at least 3/13 (</b>
+														</font><b
+															style="font-size:medium;line-height:25px;background-color:transparent">with
+															<a target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																rel="nofollow">Dan Cranston</a>) <b
+																style="background-color:transparent"><b><b
+																		style="font-size:13.3333px;line-height:24px">
+																		<font size="3"><i>Electron. J. Combin.</i>,
+																			Accepted.</font>
+																	</b></b></b> </b><b
+															style="font-size:medium;line-height:25px;background-color:transparent"><b>
+																<font size="3"><b><a target="_blank"
+																			href="https://landon.github.io/graphdata/Papers/planar%20independence%20ratio.pdf"
+																			rel="nofollow">(pdf)</a></b></font>
+															</b></b>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font style="background-color:transparent"><b
+																style="font-size:medium">Painting squares in <b
+																	style="line-height:25.6px">
+																	<font size="4" style="font-weight:normal">Δ</font>
+																</b>^2 - 1</b></font>
+														<font size="3" style="background-color:transparent"><b><span
+																	style="font-size:large;font-weight:normal;line-height:22.5px">
+																	sh</span>ades. </b></font><b
+															style="font-size:medium;line-height:25px;background-color:transparent">(with
+															<a target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																rel="nofollow">Dan Cranston</a>) <b> <b
+																	style="font-size:13.3333px;line-height:24px">
+																	<font size="3"><i>Electron. J. Combin.</i>, Volume
+																		23(2), 2016.</font>
+																</b></b> </b><b
+															style="font-size:medium;line-height:25px;background-color:transparent"><b>
+																<font size="3"><b><a target="_blank"
+																			href="https://landon.github.io/graphdata/Papers/bk-square.pdf"
+																			rel="nofollow">(pdf)</a></b></font>
+															</b></b>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3"><b>Edge-coloring via fixable subgraphs. <span
+																	style="line-height:25.6px"> (with </span></b></font>
+														<b style="font-size:medium;line-height:25px"><a target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																rel="nofollow">Dan Cranston</a>) </b><b
+															style="font-size:medium;line-height:25px"><b>
+																<font size="3"><b><a target="_blank"
+																			href="http://arxiv.org/pdf/1507.05600.pdf"
+																			style="color:rgb(255,255,255);background-image:initial;background-repeat:initial"
+																			rel="nofollow">(pdf)</a></b></font>
+															</b></b>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3"
+															style="font-size:medium;font-weight:bold;line-height:21px">
+															Graphs with </font>
+														<font style="font-weight:bold;line-height:21px">
+															<font size="4">χ = </font>
+															<font size="3"><b style="line-height:20px"><b
+																		style="line-height:25.6px">
+																		<font size="4" style="font-weight:normal">Δ
+																		</font>
+																	</b></b> have big cliques. </font>
+														</font><b>
+															<font size="3">(with </font><a target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																style="font-size:medium" rel="nofollow">Dan Cranston</a>
+															<font size="3">) </font><b
+																style="font-size:medium;line-height:25px">
+																<font size="3"><b><span
+																			style="font-weight:normal"><i><b>SIAM J.
+																					Discrete Math.</b></i></span></b>
+																</font>
+															</b><b><b><b>
+																		<font size="3"><b><b><b>
+																						<font size="3"><b><b><b>
+																										<font size="3">
+																											<b><b><span
+																														style="line-height:25px"><i>,
+																															29(4),
+																															1792–1814</i></span><span
+																														style="line-height:25.6px">.</span></b></b>
+																										</font>
+																									</b></b></b></font>
+																					</b></b></b></font>
+																	</b></b></b>
+														</b><span style="font-size:13.3333px;line-height:16.6667px">
+														</span> <b style="font-size:medium"><a target="_blank"
+																href="https://landon.github.io/graphdata/Papers/big-clique-v3b.pdf"
+																rel="nofollow">(pdf)</a> </b><b
+															style="font-size:13.3333px;line-height:23.7037px">
+															<font size="3">
+																<font size="3"><span style="line-height:24px">
+																		<font size="3"><span style="line-height:25px">
+																				<font size="3" style="line-height:19px">
+																					<a target="_blank"
+																						href="http://dx.doi.org/10.1137/130929515"
+																						rel="nofollow">(doi)</a> </font>
+																			</span></font>
+																	</span></font>
+															</font>
+														</b>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3"><span style="line-height:25.6px"><b>The
+																	fractional chromatic number of the plane.
+																</b></span></font>
+														<font size="3"><b>(with </b></font><b
+															style="font-size:medium;line-height:25px"><a target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																rel="nofollow">Dan Cranston</a>) <b><b>
+																	<font size="3"><b><b
+																				style="line-height:28.4444px"><b>
+																					<font size="3"><b><b
+																								style="line-height:28.4444px">
+																								<font size="3"><b><b
+																											style="line-height:24px"><i>Combinatorica,
+																											</i></b></b>
+																								</font>
+																							</b></b></font>
+																				</b></b></b></font>
+																</b></b></b><b
+															style="font-size:medium;line-height:25px;background-color:transparent"><b>
+																<font size="3"><b><b><b><b><b>
+																						<font size="3"><b><b
+																									style="line-height:28.4444px"><b>
+																										<font size="3">
+																											<b><b
+																													style="line-height:25px"><b
+																														style="line-height:25.6px">Accepted.</b></b></b>
+																										</font>
+																									</b></b></b></font>
+																					</b></b></b></b></b></font>
+															</b></b><span
+															style="font-size:13.3333px;line-height:16.6667px"> </span><a
+															target="_blank"
+															href="https://landon.github.io/graphdata/Papers/plane-fractional-chromatic.pdf"
+															rel="nofollow">(pdf)</a>
+													</li>
+												</ul>
+												<ul>
+													<li><b>
+															<font size="3">A note on coloring vertex-transitive graphs.
+															</font>
+														</b>
+														<font size="3"><b> </b></font><b
+															style="font-size:medium;line-height:25px">(with <a
+																target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																rel="nofollow">Dan Cranston</a>) <b
+																style="font-size:13.3333px;line-height:24px">
+																<font size="3"><i>Electron. J. Combin.</i>, <b
+																		style="font-size:13.3333px;line-height:24px">
+																		<font size="3"><span
+																				style="font-weight:normal"><b>Volume
+																					22(2), 2015</b></span></font>
+																	</b>.</font>
+															</b> </b><b style="font-size:medium;line-height:25px"><b>
+																<font size="3"><b><a target="_blank"
+																			href="http://www.combinatorics.org/ojs/index.php/eljc/article/download/v22i2p1/pdf"
+																			style="color:rgb(0,63,92)"
+																			rel="nofollow">(pdf)</a></b></font>
+															</b></b>
+													</li>
+												</ul>
+												<ul>
+													<li><b style="font-size:medium;line-height:25.6px">Brooks' Theorem
+															and Beyond. </b>
+														<font size="3"><b> </b></font><b
+															style="font-size:medium;line-height:25px">(with <a
+																target="_blank"
+																href="http://www.people.vcu.edu/~dcranston/"
+																rel="nofollow">Dan Cranston</a>) </b><b
+															style="font-size:medium;line-height:25px"><b>
+																<font size="3"><b><b style="line-height:28.4444px"><b>
+																				<font size="3"><b><b
+																							style="line-height:28.4444px">
+																							<font size="3"><b><b
+																										style="line-height:24px"><i>J.
+																											Graph
+																											Theory,
+																										</i></b></b>
+																							</font>
+																						</b></b></font>
+																			</b></b></b></font>
+															</b></b>
+														<font size="3"><b><b style="line-height:25px"><b><b>
+																			<font size="3"><b><b
+																						style="line-height:28.4444px"><b>
+																							<font size="3"><b><b
+																										style="line-height:25px"><b
+																											style="line-height:25.6px">
+																											<font
+																												size="3">
+																												<b><b><b>
+																															<font
+																																size="3">
+																																<b>
+																																	<font
+																																		size="3"
+																																		style="font-weight:normal">
+																																		<span
+																																			style="line-height:25px"><span
+																																				style="font-size:13px;line-height:24px">
+																																				<font
+																																					size="3">
+																																					<b>
+																																						<font
+																																							size="3">
+																																							80
+																																						</font>
+																																						(3):199-225,
+																																						2015
+																																					</b>
+																																				</font>
+																																			</span></span>
+																																	</font>
+																																</b>
+																															</font>
+																														</b></b></b>
+																											</font>
+																										</b></b></b>
+																							</font>
+																						</b></b></b></font>
+																		</b></b></b></b></font><b
+															style="line-height:25px">. </b><a target="_blank"
+															href="http://arxiv.org/pdf/1403.0479v1"
+															style="color:rgb(0,63,92)" rel="nofollow">(pdf)</a> <b
+															style="font-size:13.3333px;line-height:23.7037px">
+															<font size="3">
+																<font size="3"><span style="line-height:24px">
+																		<font size="3"><span style="line-height:25px">
+																				<font size="3" style="line-height:19px">
+																					<a target="_blank"
+																						href="http://dx.doi.org/10.1002/jgt.21847"
+																						rel="nofollow">(doi)</a> </font>
+																			</span></font>
+																	</span></font>
+															</font>
+														</b>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3"><span style="line-height:25px"><b>Conjectures
+																	equivalent to the Borodin-Kostochka conjecture that
+																	appear weaker. (with <a target="_blank"
+																		href="http://www.people.vcu.edu/~dcranston/"
+																		rel="nofollow">Dan Cranston</a>) <b
+																		style="line-height:25.6px">
+																		<font size="3"><b><b
+																					style="line-height:24px"><i>European
+																						J. Combinatorics., </i></b></b>
+																		</font>
+																	</b></b></span></font><b>
+															<font size="3">Volume 44, Part A, February 2015, Pages 23–42
+																<a target="_blank"
+																	href="https://landon.github.io/graphdata/Papers/bkequiv.pdf"
+																	rel="nofollow">(pdf)</a> </font>
+														</b><b style="font-size:13.3333px;line-height:23.7037px">
+															<font size="3">
+																<font size="3"><span style="line-height:24px">
+																		<font size="3"><span style="line-height:25px">
+																				<font size="3" style="line-height:19px">
+																					<a target="_blank"
+																						href="http://dx.doi.org/10.1016/j.ejc.2014.09.006"
+																						rel="nofollow">(doi)</a> </font>
+																			</span></font>
+																	</span></font>
+															</font>
+														</b>
+													</li>
+												</ul>
+												<ul>
+													<li><b
+															style="font-size:medium;line-height:25.6px;background-color:transparent">The
+															list-chromatic index of K_8 and K_10. </b><b
+															style="font-size:medium;line-height:25px"> </b><b
+															style="font-size:medium;line-height:25px"><b>
+																<font size="3"><b><a target="_blank"
+																			href="https://landon.github.io/graphdata/Papers/K8.pdf"
+																			style="color:rgb(0,63,92)"
+																			rel="nofollow">(pdf)</a></b></font>
+															</b></b></li>
+												</ul>
+												<ul>
+													<li><b><b><b><b>
+																		<font size="3"><span
+																				style="line-height:25px">Yet another
+																				proof of Brooks' theorem. </span></font>
+																	</b></b></b></b><b><b><b><b>
+																		<font size="3"> </font><a target="_blank"
+																			href="https://landon.github.io/graphdata/Papers/anotherbrooks.pdf"
+																			style="font-size:medium;line-height:25px"
+																			rel="nofollow">(pdf)</a>
+																	</b></b></b></b></li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3"><b>A game generalizing Hall's Theorem. <font
+																	size="3" style="font-weight:normal"><span
+																		style="line-height:24px"><i
+																			style="font-weight:bold">Discrete
+																		</i></span></font>
+																<font size="3" style="font-weight:normal"><span
+																		style="line-height:24px"><i
+																			style="font-weight:bold">Math., </i></span>
+																</font><b>
+																	<font size="3"><b><b>
+																				<font size="3"
+																					style="font-weight:normal">
+																					<b><i>320<b
+																								style="font-style:normal">(6):87-91,
+																								2014.</b></i></b></font>
+																				<font size="3"
+																					style="font-weight:normal"><span
+																						style="line-height:24px"><b>
+																						</b></span></font>
+																				<font size="3"
+																					style="font-weight:normal"><span
+																						style="line-height:24px"><b><b
+																								style="font-size:13px;line-height:21px">
+																								<font size="3"><a
+																										target="_blank"
+																										href="https://landon.github.io/graphdata/Papers/hall.pdf"
+																										rel="nofollow">(pdf)</a>
+																								</font>
+																							</b> </b></span></font>
+																				<font size="3"
+																					style="font-weight:normal"><b><a
+																							target="_blank"
+																							href="http://dx.doi.org/10.1016/j.disc.2013.12.010"
+																							rel="nofollow">(doi)</a>
+																					</b></font>
+																			</b></b></font>
+																</b>
+															</b></font>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3"><b>Coloring graphs with dense neighborhoods.
+																<font size="3"><b><b style="line-height:24px"><i>J.
+																				Graph Theory, </i></b>
+																		<font size="3" style="font-weight:normal"><span
+																				style="line-height:25px"><span
+																					style="font-size:13px;line-height:24px">
+																					<font size="3"><b> </b></font>
+																				</span></span></font>
+																		<font size="3" style="font-weight:normal"><span
+																				style="line-height:25px"><span
+																					style="font-size:13px;line-height:24px">
+																					<font size="3"><b>
+																							<font size="3">
+																								<font size="3">
+																									<font size="3"><b>
+																											<font
+																												size="3">
+																												76
+																											</font>
+																											(4):32<font
+																												size="3">
+																												3</font>
+																											-340, 2014.
+																										</b></font>
+																								</font>
+																							</font>
+																						</b></font>
+																				</span></span></font>
+																	</b></font></b></font><b><a target="_blank"
+																href="https://landon.github.io/graphdata/Papers/DenseNeighborhoods.pdf"
+																rel="nofollow">(pdf)</a> </b><b>
+															<font size="3">
+																<font size="3"><span style="line-height:24px">
+																		<font size="3"><span style="line-height:25px">
+																				<font size="3" style="line-height:19px">
+																					<a target="_blank"
+																						href="http://dx.doi.org/10.1002/jgt.21768"
+																						rel="nofollow">(doi)</a> </font>
+																			</span></font>
+																	</span></font>
+															</font>
+														</b>
+													</li>
+												</ul>
+												<ul>
+													<li><b><b>
+																<font size="3"><span style="line-height:25px">Coloring
+																		graphs from almost maximum degree sized </span>
+																</font>
+															</b></b></li>
+													<li
+														style="background-color:transparent;line-height:1.25;font-size:10pt;display:inline!important">
+														<b><b><b style="line-height:1.6;font-size:10pt;background-color:transparent"><b>
+																		<font size="3"><span
+																				style="line-height:25px">palettes.
+																			</span></font>
+																	</b></b></b></b></li><b
+														style="background-color:transparent;line-height:1.25;font-size:10pt"><b>
+															<font size="3"><span
+																	style="line-height:25px"><i>Dissertation</i>.
+																	(</span></font>
+														</b><b style="font-size:medium;line-height:25px"><a
+																target="_blank"
+																href="https://landon.github.io/graphdata/Papers/main_fancy.pdf"
+																rel="nofollow">pdf</a>)</b></b>
+												</ul>
+												<ul>
+													<li><b>
+															<font size="3">Partitioning and coloring graphs with degree
+																constraints. </font>
+														</b><b>
+															<font size="3">
+																<font size="3"><span
+																		style="line-height:24px"><i>Discrete </i></span>
+																</font>
+																<font size="3"><span
+																		style="line-height:24px"><i>Math.,</i>
+																		313(9):1028-1034, 2013</span></font>
+															</font>
+														</b><b>
+															<font size="3">
+																<font size="3"><span style="line-height:24px">
+																		<font size="3"><b><b>.</b></b></font>
+																	</span></font>
+															</font>
+														</b><b>
+															<font size="3">
+																<font size="3"><span style="line-height:24px"><b>
+																			<font size="3"><a target="_blank"
+																					href="https://landon.github.io/graphdata/Papers/partitioning_coloring.pdf"
+																					rel="nofollow">(pdf<font size="3">)
+																					</font></a></font>
+																		</b> </span></font>
+															</font>
+														</b><b>
+															<font size="3">
+																<font size="3"><span style="line-height:24px">
+																		<font size="3"><span style="line-height:25px">
+																				<font size="3" style="line-height:19px">
+																					<b><a target="_blank"
+																							href="http://dx.doi.org/10.1016/j.disc.2013.01.007"
+																							rel="nofollow">(doi)</a>
+																					</b></font>
+																			</span></font>
+																	</span></font><a target="_blank"
+																	href="http://dl.dropbox.com/u/8609833/Papers/partitioning_coloring.pdf"
+																	rel="nofollow">
+																	<font size="3"><br /></font>
+																</a>
+															</font>
+														</b></li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3"><b>
+																<font size="3" style="font-weight:normal"><b>A different
+																		short proof of Brooks' theorem. <i>Discuss.
+																			Math. Graph Theory<font size="3">,</font>
+																			</i> </b></font><b> 34(3), 2014. <a
+																		target="_blank"
+																		href="https://landon.github.io/graphdata/Papers/shortbrooks.pdf"
+																		rel="nofollow">(pdf)</a> </b>
+															</b></font><b><a target="_blank"
+																href="https://landon.github.io/graphdata/Papers/shortbrooks2.pdf"
+																style="font-size:medium;line-height:25px"
+																rel="nofollow">(shorter)</a> </b><b><b><b><b><a
+																			target="_blank"
+																			href="https://landon.github.io/graphdata/Papers/anotherbrooks.pdf"
+																			style="font-size:medium;line-height:25px"
+																			rel="nofollow">(shortest)</a></b></b></b></b>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3"><b>Coloring claw-free graphs with </b></font>
+														<font size="4">Δ</font>
+														<font size="3"><b> - 1 colors. </b></font>
+														<font size="3"><span style="line-height:25px"><b>(with <a
+																		target="_blank"
+																		href="http://www.people.vcu.edu/~dcranston/"
+																		rel="nofollow">Dan Cranston</a>) </b></span>
+														</font>
+														<font size="3"><span style="line-height:25px"><b>
+																	<font size="3"><b><span
+																				style="font-weight:normal"><i><b>SIAM J.
+																						Discrete Math., 27(1):534-549,
+																						2013</b></i><b>
+																					<font size="3">.</font>
+																				</b></span></b></font>
+																</b></span></font>
+														<font size="3"><span style="line-height:25px"><b><a
+																		target="_blank"
+																		href="http://arxiv.org/pdf/1206.1269v1.pdf"
+																		rel="nofollow">(pdf)</a> </b></span></font><b>
+															<font size="3">
+																<font size="3"><span style="line-height:24px">
+																		<font size="3"><span style="line-height:25px">
+																				<font size="3" style="line-height:19px">
+																					<b><a target="_blank"
+																							href="http://dx.doi.org/10.1137/12088015X"
+																							rel="nofollow">(doi)</a></b>
+																				</font>
+																			</span></font>
+																	</span></font>
+															</font>
+														</b>
+													</li>
+												</ul>
+												<ul>
+													<li><b><b>
+																<font size="3">A note on vertex partitions. <a
+																		target="_blank"
+																		href="https://landon.github.io/graphdata/Papers/partition_note.pdf"
+																		rel="nofollow">(pdf)</a></font>
+															</b></b></li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3"><span style="line-height:25px"><span
+																	style="font-size:13px;line-height:24px">
+																	<font size="3"><b>Destroying non-complete regular
+																			components in graph partitions. <i>J. Graph
+																				Theory</i>, </b></font>
+																</span></span></font>
+														<font size="3"><span style="line-height:25px"><span
+																	style="font-size:13px;line-height:24px">
+																	<font size="3"><b>
+																			<font size="3">
+																				<font size="3">
+																					<font size="3"><b>
+																							<font size="3">72</font>(
+																							<font size="3">2</font>):
+																							<font size="3">123</font>-
+																							<font size="3">12</font>7,
+																							201<font size="3">3</font>.
+																						</b></font>
+																				</font>
+																			</font> (
+																		</b><a target="_blank"
+																			href="https://landon.github.io/graphdata/Papers/Destroying%20NonComplete.pdf"
+																			style="color:rgb(68,90,169)"
+																			rel="nofollow"><b>pdf</b></a><b>) </b>
+																	</font>
+																</span>
+																<font size="3" style="line-height:19px"><b><a
+																			target="_blank"
+																			href="http://dx.doi.org/10.1002/jgt.21634"
+																			rel="nofollow">(doi)</a></b></font>
+															</span></font>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<font size="3"><span style="line-height:24px"><b>Graphs with
+																	chromatic number close to maximum degree. (with <a
+																		target="_blank"
+																		href="http://www.math.uiuc.edu/~kostochk/"
+																		rel="nofollow">Alexandr Kostochka</a> and
+																</b></span></font>
+														<font size="3"><span style="line-height:24px"><b><a
+																		target="_blank"
+																		href="http://www.tu-ilmenau.de/?id=2718"
+																		rel="nofollow">Michael Stiebitz</a>) </b></span>
+														</font>
+														<font size="3"><span style="line-height:24px"><i
+																	style="font-weight:bold">Discrete </i></span></font>
+														<font size="3"><span style="line-height:24px"><i
+																	style="font-weight:bold">Math.,</i> </span></font>
+														<font size="3"><b><i>312<b
+																		style="font-style:normal;line-height:25px">(6):1273-1281,
+																		2012.</b></i></b></font>
+														<font size="3"><span style="line-height:24px"><b> </b></span>
+														</font><b><b>
+																<font size="3"><a target="_blank"
+																		href="https://landon.github.io/graphdata/Papers/dm-rs.pdf"
+																		rel="nofollow">(pdf)</a></font>
+															</b></b>
+														<font size="3"><span style="line-height:24px"><b> </b></span>
+														</font>
+														<font size="3"><b><a target="_blank"
+																	href="http://dx.doi.org/10.1016/j.disc.2011.12.014"
+																	rel="nofollow">(doi)</a> </b></font>
+													</li>
+												</ul>
+												<ul style="font-weight:bold;line-height:19px">
+													<li><span style="font-weight:normal;line-height:24px"><b>
+																<font size="3">A strengthening of Brooks' Theorem for
+																	line graphs. <i>Electron. J. Combin.</i>, <span
+																		style="font-weight:normal"><b>N145, Volume
+																			18(1), 2011</b></span>. <a target="_blank"
+																		href="https://landon.github.io/graphdata/Papers/LineGraph_new.pdf"
+																		rel="nofollow">(pdf)</a></font>
+															</b></span></li>
+													<li style="list-style-type:square;font-weight:normal">
+														<p>
+															<font size="4">Δ</font>
+															<font size="3"><b>-Critical graphs with small high vertex
+																	cliques. <i>J. Combin. Theory Ser. B, 102<b
+																			style="font-style:normal;line-height:25px">(1):126-130,
+																			2012.</b> </i> (</b><a target="_blank"
+																	href="https://landon.github.io/graphdata/Papers/DeltaCritical.pdf"
+																	style="color:rgb(68,90,169)"
+																	rel="nofollow"><b>pdf</b></a><b>) <a target="_blank"
+																		href="http://dx.doi.org/10.1016/j.jctb.2011.05.003"
+																		rel="nofollow">(doi)</a></b></font>
+														</p>
+													</li>
+												</ul>
+											</div>
+											<div>
+												<ul style="font-size:13.3333px">
+													<li>
+														<p>
+															<font size="3">
+																<font size="3">
+																	<font size="3"><b>On hitting all maximum cliques
+																			with an independent set. <i>J. Graph
+																				Theory</i>, 66(1):32-37, 2011. (</b><a
+																			target="_blank"
+																			href="http://arxiv.org/pdf/0907.3705v3"
+																			rel="nofollow"><b>pdf</b></a><b>) <a
+																				target="_blank"
+																				href="http://dx.doi.org/10.1002/jgt.20487"
+																				rel="nofollow">(doi)</a></b></font>
+																</font>
+															</font>
+														</p>
+													</li>
+													<li>
+														<font size="3"><b>The Borodin-Kostochka conjecture for graphs
+																containing a doubly critical edge. <i>Electron. J.
+																	Combin.</i>, N22, Volume 14(1), 2007. (</b><a
+																target="_blank"
+																href="https://landon.github.io/graphdata/Papers/v14i1n22.pdf"
+																rel="nofollow"><b>pdf</b></a><b>)</b>
+															<p style="display:inline!important"><b> </b></p>
+														</font>
+													</li>
+												</ul>
+												<ul>
+													<li style="font-size:13.3333px">
+														<p align="left">
+															<font size="3"><b>A note on Reed’s conjecture.
+																</b><i><b>SIAM J. Discrete Math.</b></i><b>,
+																	22(2):820-827, 2008. (</b><a target="_blank"
+																	href="https://landon.github.io/graphdata/Papers/A%20Note%20On%20Reed%27s%20Conjecture.pdf"
+																	rel="nofollow"><b>pdf</b></a><b>) </b><span
+																	style="line-height:24px"><b><a target="_blank"
+																			href="http://dx.doi.org/10.1137/060659193"
+																			style="color:rgb(68,90,169)"
+																			rel="nofollow">(doi)</a></b></span></font>
+														</p>
+													</li>
+													<li style="font-size:13.3333px">
+														<p align="left">
+															<font size="3"><b>On graph associations. </b><b><span
+																		style="font-weight:normal"><i><b>SIAM J.
+																				Discrete Math.</b></i></span>,
+																	20(2):529–535, 2006. (</b><a target="_blank"
+																	href="https://landon.github.io/graphdata/Papers/Associate3.pdf"
+																	rel="nofollow"><b>pdf</b></a><b>) </b><span
+																	style="line-height:24px"><b> <a target="_blank"
+																			href="http://dx.doi.org/10.1137/050626545"
+																			style="color:rgb(68,90,169)"
+																			rel="nofollow">(doi)</a></b></span></font>
+														</p>
+													</li>
+													<li>
+														<p align="left"><span
+																style="background-color:transparent;line-height:27px"><b>
+																	<font size="3">Dangerous reference graphs and
+																		semantic paradoxes. </font>
+																</b></span><span
+																style="font-size:medium;background-color:transparent;font-weight:800;line-height:27px">(with
+																<a target="_blank" href="http://brianrabern.net/"
+																	rel="nofollow">Brian Rabern</a> and <a
+																	target="_blank"
+																	href="http://www.math.clemson.edu/~macaule/"
+																	rel="nofollow">Matthew Macauley</a>),</span><span
+																style="font-size:13.3333px;background-color:transparent;font-weight:800;line-height:27px"><span
+																	style="font-size:medium"> </span></span><span
+																style="font-size:13.3333px;background-color:transparent;line-height:24px">
+																<font size="3"><b><i>Journal of Philosophical Logic,
+																		</i><span style="line-height:27px">42(5),
+																			727-765, 2013.</span> </b></font>
+															</span><span
+																style="font-size:13.3333px;background-color:transparent;line-height:27px"><b><span
+																		style="font-size:medium"> <a target="_blank"
+																			href="http://dx.doi.org/10.1007/s10992-012-9246-2"
+																			rel="nofollow">(doi)</a></span></b></span>
+														</p>
+													</li>
+													<li style="font-size:13.3333px">
+														<p align="left"><b
+																style="font-size:13.3333px;background-color:transparent">
+																<font size="3">Applying groebner basis techniques to
+																	group theory. <i>Journal of Pure and Applied
+																		Algebra</i>, 210(1):137-140, 2007. (<a
+																		target="_blank"
+																		href="http://dx.doi.org/10.1016/j.jpaa.2006.09.001"
+																		rel="nofollow">doi</a>)</font>
+															</b></p>
+													</li>
+												</ul>
+												<div>
+													<font size="3"><br /></font>
+												</div>
+												<div><b>
+														<font size="6">Talks</font>
+													</b></div>
+												<div>
+													<ul style="font-size:13.3333px">
+														<li>
+															<font size="3"><b><span style="line-height:24px">A common
+																		generalization of Hall's theorem and Vizing's
+																	</span></b></font>
+														</li>
+														<li
+															style="font-size:13.3333px;background-color:transparent;display:inline!important">
+															<font size="3"><b><b
+																		style="line-height:1.6;background-color:transparent"><span
+																			style="line-height:24px">edge-coloring
+																			theorem</span></b></b></font>
+														</li>
+														<font size="3" style="background-color:transparent"><b>
+																<font size="3" style="background-color:transparent">
+																	<b><span
+																			style="font-weight:normal;line-height:24px">
+																			(</span><span style="line-height:24px">Miami
+																			University Colloquium</span><span
+																			style="font-weight:normal;line-height:24px">)
+																		</span></b></font><b
+																	style="line-height:24px;background-color:transparent"><span
+																		style="font-weight:normal"><b>(</b><a
+																			target="_blank"
+																			href="https://landon.github.io/graphdata/Papers/hall%20vizing%20talk.pdf"
+																			style="color:rgb(68,90,169)"
+																			rel="nofollow"><b>slides</b></a><b>)</b></span></b>
+															</b></font>
+													</ul>
+													<ul style="font-size:13.3333px">
+														<li>
+															<font size="3"><b><span style="line-height:24px">Extending
+																		Alon-Tarsi Orientations (AMS Special Session on
+																		Structural and Extremal Problems) </span></b>
+															</font><b style="line-height:24px;font-size:medium"><span
+																	style="font-weight:normal"><b>(</b><a
+																		target="_blank"
+																		href="https://landon.github.io/graphdata/Papers/alon%20tarsi%20talk.pdf"
+																		style="color:rgb(68,90,169)"
+																		rel="nofollow"><b>slides</b></a><b>)</b></span></b>
+														</li>
+													</ul>
+													<ul style="font-size:13.3333px">
+														<li style="line-height:24px">
+															<font size="3"><b>List coloring with large maximum degree.
+																	<a target="_blank"
+																		href="https://landon.github.io/graphdata/Papers/poster_landscape.pdf"
+																		rel="nofollow">(poster)</a></b></font>
+														</li>
+													</ul>
+													<ul style="font-size:13.3333px">
+														<li style="line-height:24px">
+															<font size="3"><b><span style="font-weight:normal"><b>An
+																			improvement on Brooks' theorem (CU-Denver
+																			Discrete Math Seminar). (</b><a
+																			target="_blank"
+																			href="https://landon.github.io/graphdata/Papers/brooks_beamer.pdf"
+																			style="color:rgb(68,90,169)"
+																			rel="nofollow"><b>slides</b></a><b>)</b></span></b>
+															</font>
+														</li>
+													</ul>
+													<ul style="font-size:13.3333px">
+														<li style="line-height:24px">
+															<font size="3"><b>Improving Brooks' theorem (The 26th
+																	Clemson Conference on Discrete Math and Algorithms,
+																	2011) </b></font><b style="font-size:medium"><span
+																	style="font-weight:normal"><b>(</b><a
+																		target="_blank"
+																		href="https://landon.github.io/graphdata/Papers/brooks_beamer%202.pdf"
+																		style="color:rgb(68,90,169)"
+																		rel="nofollow"><b>slides</b></a><b>)</b></span></b>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+
+			<article id="data">
+				<h2 class="major">Data</h2>
+				the <a target="_blank"
+					href="http://www.openproblemgarden.org/op/the_borodin_kostochka_conjecture">borodin-kostochka
+					conjecture</a> from the 1970s was my dissertation project.
+				i did not prove it, but made substantial progress. the data here can be used to severely restrict
+				possible counterexamples to the conjecture.
+				<br><br>
+				<div>
+					<div><a target="_blank"
+							href="https://landon.github.io/graphdata/borodinkostochka/offline/index.html"
+							rel="nofollow">Borodin-Kostochka offline</a><br /></div>
+					<div><a target="_blank" href="https://landon.github.io/graphdata/borodinkostochka/online/index.html"
+							rel="nofollow">Borodin-Kostochka online</a><br /></div>
+					<div><a target="_blank" href="https://landon.github.io/graphdata/borodinkostochka/AT/index.html"
+							rel="nofollow">Borodin-Kostochka Alon-Tarsi</a><br /></div>
+					<div><a target="_blank" href="https://landon.github.io/graphdata/borodinkostochka/2fold/index.html"
+							rel="nofollow">Borodin-Kostochka 2-fold</a><br /></div>
+					<div><a target="_blank" href="https://landon.github.io/graphdata/borodinkostochka/3fold/index.html"
+							rel="nofollow">Borodin-Kostochka 3-fold</a></div>
+				</div>
+			</article>
+
+			<article id="about">
+				<h2 class="major">About</h2>
+				when i was a child, i was obsessed with machine intelligence, i coded a strong chess AI (codenamed
+				Betsy) and experimented with using
+				neural networks in Betsy, both for the static evaluation at leaf nodes and within the tree for pruning.
+				the networks learned from self-play to get
+				about as good as my hand-tuned functions (discounting the slowdown incurred by sigmoid evaluation). i
+				concluded that to do better, i would need
+				to use raw game state data instead of the set of features i preselected as network inputs;
+				unfortunately, this was 2000 and i did not have nearly
+				enough processing power to do so.
+				<br><br>
+				to avoid spinning my wheels while waiting for faster hardware, i decided to put my machine intelligence
+				ambitions on hold and study mathematics instead.
+				my first year as a math major was spent abroad at utrecht university in the netherlands. my dutch was
+				pretty poor, but luckily all the math textbooks
+				were in english. learning to learn from just a textbook was painful at first, but this method of
+				learning has been indispensable ever since.
+				<br><br>
+				in 2005 i felt the pull of making real things and left my math phd program (where i was researching fun
+				things like quantum groups) to work
+				for a defense contractor. we simulated nuclear weapons effects like damage caused to hardware by
+				electromagnetic pulse. this work was interesting,
+				but for family reasons, after about a year, i moved to colorado and took a job for a subsidiary of
+				goldman sachs.
+				<br><br>
+				the goldman sachs job was not particularly exciting and i had lots of downtime. i had just read the book
+				<i>the man who loved only numbers</i> about paul erdős;
+				a homeless math genius that traveled around for decades to work on hard problems with other discrete
+				mathematicians. i decided to use my work downtime to
+				teach myself graph theory and see if i was smart enough to play with these discrete mathematicians. this
+				was in 2007, it took three years and a lot more than
+				just my work downtime, but in 2010 i made a breakthrough, <a target="_blank"
+					href="https://doi.org/10.1016/j.jctb.2011.05.003">proving</a> a conjecture of two prominent graph
+				theorists (alexandr kostochka and hal kierstead). i made
+				arrangements with kierstead to come out to arizona state and finish my phd.
+				<br><br>
+				now it is 2018, i have satisfied my curiosity about playing with erdős's friends and achieved the best
+				possible erdős number of 2 (since erdős no longer lives).
+				neural networks are all over the news, now called <i>deep learning</i>, researchers are having great
+				success; hardware is now fast enough and there are massive
+				amounts of data to play with. it is past time for me to get back to my childhood obsession.
+			</article>
+		</div>
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
