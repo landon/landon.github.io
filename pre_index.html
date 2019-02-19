@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>landon rabern</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<script language="javascript" type="text/javascript">
+		function playSound(soundfile) {
+			document.getElementById("dummy").innerHTML =
+				"<embed src=\"" + soundfile + "\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+		}
+	</script>
+</head>
+
+<body>
+	<span id="dummy"></span>
+	<div id="wrapper">
+		<header id="header">
+			<div class="logo">
+				<a href="#" onclick="playSound('content/first_stream_left.ogg');">
+					<img src="images/brain.png" width="95%" style="vertical-align: middle" />
+				</a>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>landon</h1>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#essentials">Essentials</a></li>
+					<li><a href="#coding">Coding</a></li>
+					<li><a href="#math">Math</a></li>
+					<li><a href="#data">Data</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main">
+			INCLUDE_essentials.html_
+			INCLUDE_coding.html_
+			INCLUDE_math.html_
+			INCLUDE_data.html_
+			INCLUDE_about.html_
+		</div>
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

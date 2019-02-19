@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+script="$1"
+normalized="$script.cs"
+binary="$script.b"
+tail -n +2 "$script" > "$normalized"
+mcs "$normalized" -out:"$binary"
+mono "$binary" "$@"
+rm "$binary"
+rm "$normalized"
