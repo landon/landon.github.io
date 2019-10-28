@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+./replace.cs INCLUDE_essentials.html_,INCLUDE_coding.html_,INCLUDE_logic.html_,INCLUDE_math.html_,INCLUDE_talks.html_,INCLUDE_data.html_,INCLUDE_about.html_ in pre_index.html with essentials.html,coding.html,logic.html,math.html,talks.html,data.html,about.html as index.html
