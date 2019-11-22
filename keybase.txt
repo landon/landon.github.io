@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/1andon
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://landon.github.io
+  * I am 1andon (https://keybase.io/1andon) on keybase.
+  * I have a public key ASBH1OBMahBTgEMa2YfsdVKJNZITDtbLB1b9V6QVcnBu6Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012077bbd229e392a5439f1fa376b811d49bdbdd90c660d694069a7b1629d96be9c70a",
+      "host": "keybase.io",
+      "kid": "012047d4e04c6a105380431ad987ec7552893592130ed6cb0756fd57a41572706ee80a",
+      "uid": "6bc475e77a603a3d3b88a420af017819",
+      "username": "1andon"
+    },
+    "merkle_root": {
+      "ctime": 1574447323,
+      "hash": "235bcd7333b742472d6ff202a3758e679f6e5d1afbb14f61abf4d2d0d54c572045c42c5189f97f7cd2549ae9fead2baea718e0c1b5b01d193cbdf15b0e1d0944",
+      "hash_meta": "5c78a8dad2dbe790b27dbdcc5ca13c61fa35522feefd60e237bb70cd0648a04f",
+      "seqno": 10535313
+    },
+    "service": {
+      "entropy": "ndJ2qORaZEOL2cp9FhdPI3eZ",
+      "hostname": "landon.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.0.0"
+  },
+  "ctime": 1574447332,
+  "expire_in": 504576000,
+  "prev": "ce8d6d45eec33b656f7ec9d6ac9624089336787eb138133a0bad6557969d5110",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgR9TgTGoQU4BDGtmH7HVSiTWSEw7WywdW/VekFXJwbugKp3BheWxvYWTESpcCDcQgzo1tRe7DO2VvfsnWrJYkCJM2eH6xOBM6C61lV5adURDEIMaj8upxhyXqDdoAkp9BI2HS96oPpp3Hg3+3q4ucTMQ4AgHCo3NpZ8RAGStm+20bSW8jBH/ivlspok+5s4UN7E5+JG+0soTEgeS9BkJtFEyKCMqZxv5nj4aazmFH8orjDNLGoEOEfqadCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBafDKMQDnye544PR8HM97XkeQdwqSAdnIWdLuNF3SMio3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/1andon
+
+==================================================================

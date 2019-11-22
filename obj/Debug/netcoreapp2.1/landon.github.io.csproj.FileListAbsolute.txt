@@ -1,0 +1,11 @@
+C:\Users\landon\Documents\GitHub\landon.github.io\obj\Debug\netcoreapp2.1\landon.github.io.csprojAssemblyReference.cache
+C:\Users\landon\Documents\GitHub\landon.github.io\obj\Debug\netcoreapp2.1\landon.github.io.csproj.CoreCompileInputs.cache
+C:\Users\landon\Documents\GitHub\landon.github.io\obj\Debug\netcoreapp2.1\landon.github.io.AssemblyInfoInputs.cache
+C:\Users\landon\Documents\GitHub\landon.github.io\obj\Debug\netcoreapp2.1\landon.github.io.AssemblyInfo.cs
+C:\Users\landon\Documents\GitHub\landon.github.io\bin\Debug\netcoreapp2.1\landon.github.io.deps.json
+C:\Users\landon\Documents\GitHub\landon.github.io\bin\Debug\netcoreapp2.1\landon.github.io.runtimeconfig.json
+C:\Users\landon\Documents\GitHub\landon.github.io\bin\Debug\netcoreapp2.1\landon.github.io.runtimeconfig.dev.json
+C:\Users\landon\Documents\GitHub\landon.github.io\bin\Debug\netcoreapp2.1\landon.github.io.dll
+C:\Users\landon\Documents\GitHub\landon.github.io\bin\Debug\netcoreapp2.1\landon.github.io.pdb
+C:\Users\landon\Documents\GitHub\landon.github.io\obj\Debug\netcoreapp2.1\landon.github.io.dll
+C:\Users\landon\Documents\GitHub\landon.github.io\obj\Debug\netcoreapp2.1\landon.github.io.pdb
