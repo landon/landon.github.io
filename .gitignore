@@ -1,0 +1,10 @@
+
+*.dll
+
+bin/Debug/netcoreapp2\.1/landon\.github\.io\.deps\.json
+
+*.pdb
+
+bin/Debug/netcoreapp2\.1/landon\.github\.io\.runtimeconfig\.dev\.json
+
+bin/Debug/netcoreapp2\.1/landon\.github\.io\.runtimeconfig\.json

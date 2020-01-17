@@ -1,4 +1,4 @@
-#!/usr/bin/env ./rcs
+//#!/usr/bin/env ./rcs
 // uncomment the above line and chmod +x this file to make executable
 // ./replace.cs INCLUDE_essentials.html_,INCLUDE_coding.html_,INCLUDE_math.html_,INCLUDE_data.html_,INCLUDE_about.html_ in pre_index.html with essentials.html,coding.html,math.html,data.html,about.html as index.html
 
@@ -11,17 +11,19 @@ namespace Tools
     {
         static void Main(string[] args)
         {
-            if (args.Length < 8)
+            int n = 1;
+            if (args.Length < 8 - n)
             {
+                Console.WriteLine("only " + args.Length + " arguments passed");
                 Console.WriteLine("replaces token t_k with file w_k in f, written to o");
                 Console.WriteLine("./replace.cs t_1,...,t_n in f with w_1,...,w_n as o");
                 return;
             }
 
-            var tokens = args[1].Split(',');
-            var file = args[3];
-            var replacementFiles = args[5].Split(',');
-            var output = args[7];
+            var tokens = args[1 - n].Split(',');
+            var file = args[3 - n];
+            var replacementFiles = args[5 - n].Split(',');
+            var output = args[7 - n];
 
             string text;
             using (var sr = new StreamReader(file))
